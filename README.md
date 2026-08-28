@@ -8,6 +8,9 @@ Objetivo: tener una página publicada que muestre quién soy, mis proyectos (inc
 - **Idioma:** bilingüe español / inglés. Se redacta y aprueba primero en español,
   luego se traduce. El HTML se construye en español en la Fase 1; el botón de
   cambio de idioma se implementa en la Fase 4.
+- **Estilo visual:** "Minimal técnico" — tipografía Inter, fondo blanco, texto
+  casi negro, acento gris azulado (`#3f5c74`). Modo oscuro automático según el
+  sistema, sin botón.
 - **Práctica en Neoterra Lumina:** solo versión genérica (puesto, fechas, área).
   Sin métricas, arquitectura ni detalles internos, por confidencialidad del contrato.
 - **Datos personales:** el CV, contratos e identificaciones NO se suben al repo
@@ -98,21 +101,22 @@ Meta: todo el contenido escrito y ordenado en HTML semántico, **sin preocuparme
 
 Meta: que la página se vea cuidada y consistente en pantalla de computadora.
 
-- [ ] Añadido un **reset** o `box-sizing: border-box` global.
-- [ ] Definidas **variables CSS** (`:root`) para colores, fuente y espaciados principales.
-- [ ] Elegida y aplicada una **tipografía** (Google Fonts o fuente del sistema).
-- [ ] Definida una **paleta de 3–4 colores** (fondo, texto, color principal, acento) y usada de forma consistente.
-- [ ] Header con estilo y navegación horizontal.
-- [ ] Sección Hero con jerarquía visual clara (título grande, buen espacio en blanco).
-- [ ] Sección Proyectos con las tarjetas en **grid** o **flexbox**, alineadas y con espaciado uniforme.
-- [ ] Tarjetas de proyecto con estilo: borde/sombra, padding, imagen recortada de forma pareja.
-- [ ] Estados **`:hover`** y **`:focus`** visibles en todos los enlaces y botones.
-- [ ] Botones con un estilo reutilizable (clase `.btn`).
-- [ ] Espaciado vertical consistente entre secciones.
-- [ ] Ancho máximo de contenido (`max-width`) y centrado en pantallas grandes.
-- [ ] Footer con estilo acorde al resto.
-- [ ] Ningún estilo `inline` en el HTML (todo vive en `styles.css`).
-- [ ] Revisado en Chrome y en otro navegador (Firefox o Edge).
+- [x] Añadido un **reset** o `box-sizing: border-box` global.
+- [x] Definidas **variables CSS** (`:root`) para colores, fuente y espaciados principales.
+- [x] Elegida y aplicada una **tipografía** (Google Fonts o fuente del sistema). — Inter
+- [x] Definida una **paleta de 3–4 colores** (fondo, texto, color principal, acento) y usada de forma consistente.
+- [x] Header con estilo y navegación horizontal. — fijo (sticky) con separador
+- [x] Sección Hero con jerarquía visual clara (título grande, buen espacio en blanco).
+- [x] Sección Proyectos con las tarjetas en **grid** o **flexbox**, alineadas y con espaciado uniforme.
+- [x] Tarjetas de proyecto con estilo: borde/sombra, padding, imagen recortada de forma pareja.
+- [x] Estados **`:hover`** y **`:focus`** visibles en todos los enlaces y botones. — `:focus-visible`
+- [x] Botones con un estilo reutilizable (clase `.btn`).
+- [x] Espaciado vertical consistente entre secciones.
+- [x] Ancho máximo de contenido (`max-width`) y centrado en pantallas grandes. — 720px
+- [x] Footer con estilo acorde al resto.
+- [x] Ningún estilo `inline` en el HTML (todo vive en `styles.css`).
+- [ ] Revisado en Chrome y en otro navegador (Firefox o Edge). — **te toca a ti**
+- [x] Extra: modo oscuro automático según el sistema (`prefers-color-scheme`).
 
 **Fase 2 terminada cuando:** en pantalla de laptop la página se ve terminada y profesional.
 
