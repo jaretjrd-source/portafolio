@@ -12,3 +12,11 @@ desktop.ini
 # Editores
 .vscode/
 .idea/
+
+# Documentos personales / privados — NUNCA subir al repo público
+# (CV con datos personales, contratos, identificaciones, etc.)
+*.pdf
+*.docx
+privado/
+cv/
+contratos/

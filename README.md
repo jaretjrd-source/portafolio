@@ -12,7 +12,7 @@ Objetivo: tener una página publicada que muestre quién soy, mis proyectos (inc
 
 ### Progreso general
 
-- [ ] Fase 0 — Preparación del entorno
+- [x] Fase 0 — Preparación del entorno
 - [ ] Fase 1 — Estructura y contenido (HTML)
 - [ ] Fase 2 — Estilos y diseño (CSS)
 - [ ] Fase 3 — Diseño responsive
@@ -29,7 +29,7 @@ Objetivo: tener una página publicada que muestre quién soy, mis proyectos (inc
 Meta: tener las herramientas listas y el proyecto versionado.
 
 - [x] Instalar y abrir **Visual Studio Code** en esta carpeta (`Pagina_web`).
-- [ ] Instalar la extensión **Live Server** en VS Code (para ver cambios en el navegador al guardar).
+- [x] Instalar la extensión **Live Server** en VS Code (para ver cambios en el navegador al guardar).
 - [x] Instalar **Git** y confirmar que funciona (`git --version` en la terminal). — v2.55.0
 - [x] Ejecutar `git init` dentro de la carpeta `Pagina_web`.
 - [x] Crear un archivo `.gitignore` con al menos: `node_modules/`, `.DS_Store`, `*.log`.
