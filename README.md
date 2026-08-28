@@ -84,10 +84,9 @@ Meta: todo el contenido escrito y ordenado en HTML semántico, **sin preocuparme
   - [ ] (Opcional) una foto mía en `assets/img/`
 - [x] Sección **Proyectos** (`id="proyectos"`) con:
   - [x] Al menos **2 tarjetas** de proyecto (una es el juego)
-  - [ ] Cada tarjeta tiene: título, descripción corta, imagen/captura, enlace a demo y enlace a código
-    → texto, estructura y enlace al código del juego (github.com/jaretjrd-source/breakout) listos;
-      **faltan**: reemplazar los `placeholder.svg` por capturas reales de los 3 proyectos
-      y (opcional) una demo del juego
+  - [x] Cada tarjeta tiene: título, descripción corta, imagen/captura, enlace a demo y enlace a código
+    → los 3 proyectos con captura real (redimensionadas y comprimidas: ~290 KB en total);
+      el juego enlaza a github.com/jaretjrd-source/breakout; la "demo" del juego queda pendiente (opcional)
 - [x] Sección **Contacto** (`id="contacto"`) con:
   - [x] Mi correo (como enlace `mailto:`)
   - [x] Enlaces a GitHub y LinkedIn (u otras redes)

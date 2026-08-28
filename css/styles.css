@@ -296,8 +296,7 @@ dd {
 
 #proyectos img {
   width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
+  height: auto;
   border-radius: 8px;
   border: 1px solid var(--border);
 }
