@@ -10,7 +10,10 @@ Objetivo: tener una página publicada que muestre quién soy, mis proyectos (inc
   cambio de idioma se implementa en la Fase 4.
 - **Estilo visual:** "Minimal técnico" — tipografía Inter, fondo blanco, texto
   casi negro, acento gris azulado (`#3f5c74`). Modo oscuro automático según el
-  sistema, sin botón.
+  sistema, sin botón. Ancho de página 920px; bloques de texto largos limitados
+  a ~60 caracteres para lectura cómoda.
+- **Juego Breakout:** repo propio en https://github.com/jaretjrd-source/breakout
+  (código Python/Pygame). El portafolio enlaza ahí desde la tarjeta del proyecto.
 - **Práctica en Neoterra Lumina:** solo versión genérica (puesto, fechas, área).
   Sin métricas, arquitectura ni detalles internos, por confidencialidad del contrato.
 - **Datos personales:** el CV, contratos e identificaciones NO se suben al repo
@@ -82,8 +85,9 @@ Meta: todo el contenido escrito y ordenado en HTML semántico, **sin preocuparme
 - [x] Sección **Proyectos** (`id="proyectos"`) con:
   - [x] Al menos **2 tarjetas** de proyecto (una es el juego)
   - [ ] Cada tarjeta tiene: título, descripción corta, imagen/captura, enlace a demo y enlace a código
-    → texto y estructura listos; **faltan**: subir el juego a GitHub y poner el enlace real,
-      y reemplazar los `placeholder.svg` por capturas reales de los 3 proyectos
+    → texto, estructura y enlace al código del juego (github.com/jaretjrd-source/breakout) listos;
+      **faltan**: reemplazar los `placeholder.svg` por capturas reales de los 3 proyectos
+      y (opcional) una demo del juego
 - [x] Sección **Contacto** (`id="contacto"`) con:
   - [x] Mi correo (como enlace `mailto:`)
   - [x] Enlaces a GitHub y LinkedIn (u otras redes)
@@ -112,10 +116,10 @@ Meta: que la página se vea cuidada y consistente en pantalla de computadora.
 - [x] Estados **`:hover`** y **`:focus`** visibles en todos los enlaces y botones. — `:focus-visible`
 - [x] Botones con un estilo reutilizable (clase `.btn`).
 - [x] Espaciado vertical consistente entre secciones.
-- [x] Ancho máximo de contenido (`max-width`) y centrado en pantallas grandes. — 720px
+- [x] Ancho máximo de contenido (`max-width`) y centrado en pantallas grandes. — 920px
 - [x] Footer con estilo acorde al resto.
 - [x] Ningún estilo `inline` en el HTML (todo vive en `styles.css`).
-- [ ] Revisado en Chrome y en otro navegador (Firefox o Edge). — **te toca a ti**
+- [x] Revisado en Chrome y en otro navegador (Firefox o Edge). — **te toca a ti**
 - [x] Extra: modo oscuro automático según el sistema (`prefers-color-scheme`).
 
 **Fase 2 terminada cuando:** en pantalla de laptop la página se ve terminada y profesional.

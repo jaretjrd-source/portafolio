@@ -18,9 +18,10 @@
   --accent-strong: #2f4658;
   --border:    #e4e4e7;
 
-  --maxw: 740px;
-  --space: 1.5rem;
+  --maxw: 920px;
+  --space: 2rem;
   --radius: 10px;
+  --readw: 60ch; /* ancho cómodo para bloques largos de texto */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -207,6 +208,14 @@ section:last-child {
   margin-top: 1rem;
 }
 
+/* Bloques largos de texto: mantener un ancho de lectura cómodo
+   aunque el contenedor de la página sea más ancho */
+#sobre-mi > p,
+#experiencia article > p,
+#educacion article > p {
+  max-width: var(--readw);
+}
+
 /* ---------- 7. Botón reutilizable ---------- */
 
 .btn {
@@ -239,8 +248,10 @@ section:last-child {
 
 dl {
   display: grid;
-  gap: 1.4rem;
+  grid-template-columns: 170px 1fr;
+  gap: 1.1rem 2rem;
   margin-top: 1.25rem;
+  max-width: var(--readw);
 }
 
 dt {
@@ -248,11 +259,21 @@ dt {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--text-soft);
-  margin-bottom: 0.15rem;
+  padding-top: 0.15rem;
 }
 
 dd {
   color: var(--text);
+}
+
+@media (max-width: 640px) {
+  dl {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+  dt {
+    margin-bottom: 0.15rem;
+  }
 }
 
 /* ---------- 9. Tarjetas de proyecto ---------- */
@@ -262,7 +283,11 @@ dd {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.75rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 1.75rem;
+  align-items: start;
 }
 
 #proyectos article:last-child {
@@ -275,16 +300,26 @@ dd {
   object-fit: cover;
   border-radius: 8px;
   border: 1px solid var(--border);
-  margin-bottom: 1rem;
+}
+
+.project-body > *:last-child {
+  margin-bottom: 0;
 }
 
 #proyectos ul {
-  margin: 0.5rem 0 0.75rem 1.1rem;
+  margin: 0.5rem 0 0.9rem 1.1rem;
 }
 
 #proyectos li {
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.4rem;
   color: var(--text-soft);
+}
+
+@media (max-width: 640px) {
+  #proyectos article {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+  }
 }
 
 /* ---------- 10. Experiencia y educación ---------- */
@@ -337,6 +372,10 @@ footer p {
    (el trabajo completo de responsive es la Fase 3) */
 
 @media (max-width: 600px) {
+  :root {
+    --space: 1.25rem;
+  }
+
   .header-inner {
     flex-direction: column;
     align-items: flex-start;
@@ -348,5 +387,9 @@ footer p {
 
   section {
     margin-bottom: 2.75rem;
+  }
+
+  #proyectos article {
+    padding: 1.25rem;
   }
 }
