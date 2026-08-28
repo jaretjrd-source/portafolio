@@ -75,6 +75,15 @@ footer {
   padding-inline: var(--space);
 }
 
+/* ---------- 3b. Idioma (bilingüe) ----------
+   Se muestra solo el elemento cuyo lang coincide con <html lang>.
+   :not(:root) protege al propio <html> de quedar oculto. */
+
+:root[lang="es"] [lang="en"]:not(:root),
+:root[lang="en"] [lang="es"]:not(:root) {
+  display: none !important;
+}
+
 /* ---------- 4. Tipografía ---------- */
 
 h1,
@@ -152,8 +161,11 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   gap: 0.5rem 1rem;
+}
+
+nav {
+  margin-left: auto;
 }
 
 .logo {
@@ -184,6 +196,24 @@ nav a:hover {
   text-decoration: none;
 }
 
+.lang-toggle {
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--text-soft);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+  cursor: pointer;
+}
+
+.lang-toggle:hover {
+  color: var(--text);
+  border-color: var(--text-soft);
+}
+
 /* ---------- 6. Secciones ---------- */
 
 main {
@@ -202,7 +232,7 @@ section:last-child {
   padding-block: 2rem 1.5rem;
 }
 
-#inicio p:first-of-type {
+#inicio p[lang] {
   font-size: 1.15rem;
   max-width: 42ch;
   margin-top: 1rem;
@@ -210,9 +240,10 @@ section:last-child {
 
 /* Bloques largos de texto: mantener un ancho de lectura cómodo
    aunque el contenedor de la página sea más ancho */
-#sobre-mi > p,
+.about-text > p,
 #experiencia article > p,
-#educacion article > p {
+#educacion article > p,
+.edu-item div > p {
   max-width: var(--readw);
 }
 
@@ -244,7 +275,36 @@ section:last-child {
   }
 }
 
-/* ---------- 8. Habilidades (lista de definición) ---------- */
+/* ---------- 8. Sobre mí: texto + foto ---------- */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.about-text > p:last-child {
+  margin-bottom: 0;
+}
+
+.portrait {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 640px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .portrait {
+    max-width: 220px;
+  }
+}
+
+/* ---------- 8b. Habilidades (lista de definición) ---------- */
 
 dl {
   display: grid;
@@ -326,6 +386,36 @@ dd {
 #experiencia article,
 #educacion article {
   margin-bottom: 1.5rem;
+}
+
+.edu-item {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.edu-logo {
+  width: 64px;
+  height: auto;
+  background: #fff;
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.edu-item p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .edu-item {
+    grid-template-columns: 48px 1fr;
+    gap: 1rem;
+  }
+  .edu-logo {
+    width: 48px;
+  }
 }
 
 #experiencia ul,

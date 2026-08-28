@@ -5,9 +5,12 @@ Objetivo: tener una página publicada que muestre quién soy, mis proyectos (inc
 
 ## Decisiones del proyecto
 
-- **Idioma:** bilingüe español / inglés. Se redacta y aprueba primero en español,
-  luego se traduce. El HTML se construye en español en la Fase 1; el botón de
-  cambio de idioma se implementa en la Fase 4.
+- **Idioma:** bilingüe español / inglés. Cada texto visible está dos veces en
+  `index.html` (`lang="es"` y `lang="en"`); el CSS muestra solo el idioma de
+  `<html lang>` y el botón "EN/ES" del header lo cambia (se guarda en el navegador).
+- **Sin diseño móvil:** decisión del proyecto — la Fase 3 se omite. La página
+  está pensada para pantalla de computadora. Solo se conservan ajustes mínimos
+  (meta viewport, imágenes fluidas, apilado básico) que ya venían de fases previas.
 - **Estilo visual:** "Minimal técnico" — tipografía Inter, fondo blanco, texto
   casi negro, acento gris azulado (`#3f5c74`). Modo oscuro automático según el
   sistema, sin botón. Ancho de página 920px; bloques de texto largos limitados
@@ -18,6 +21,9 @@ Objetivo: tener una página publicada que muestre quién soy, mis proyectos (inc
   Sin métricas, arquitectura ni detalles internos, por confidencialidad del contrato.
 - **Datos personales:** el CV, contratos e identificaciones NO se suben al repo
   (bloqueados en `.gitignore`). Contacto público: solo correo, LinkedIn y GitHub.
+- **Logo del Tec de Monterrey:** se usa el logotipo en la sección de Educación
+  solo para identificar dónde estudio (uso nominativo, como en un CV). Si el Tec
+  lo pidiera, se quita sin problema.
 
 ## Cómo usar este README
 
@@ -29,9 +35,9 @@ Objetivo: tener una página publicada que muestre quién soy, mis proyectos (inc
 ### Progreso general
 
 - [x] Fase 0 — Preparación del entorno
-- [ ] Fase 1 — Estructura y contenido (HTML)
-- [ ] Fase 2 — Estilos y diseño (CSS)
-- [ ] Fase 3 — Diseño responsive
+- [x] Fase 1 — Estructura y contenido (HTML)
+- [x] Fase 2 — Estilos y diseño (CSS)
+- [~] Fase 3 — Diseño responsive — **OMITIDA** (no se busca versión móvil)
 - [ ] Fase 4 — Interactividad (JavaScript)
 - [ ] Fase 5 — Integrar el juego
 - [ ] Fase 6 — Accesibilidad y pulido
@@ -81,7 +87,7 @@ Meta: todo el contenido escrito y ordenado en HTML semántico, **sin preocuparme
 - [x] Sección **Sobre mí** (`id="sobre-mi"`) con:
   - [x] 1 o 2 párrafos de presentación
   - [x] Lista de tecnologías/habilidades que estoy aprendiendo
-  - [ ] (Opcional) una foto mía en `assets/img/`
+  - [x] (Opcional) una foto mía en `assets/img/` — `foto.jpg`, en "Sobre mí"
 - [x] Sección **Proyectos** (`id="proyectos"`) con:
   - [x] Al menos **2 tarjetas** de proyecto (una es el juego)
   - [x] Cada tarjeta tiene: título, descripción corta, imagen/captura, enlace a demo y enlace a código
@@ -125,21 +131,18 @@ Meta: que la página se vea cuidada y consistente en pantalla de computadora.
 
 ---
 
-## Fase 3 — Diseño responsive
+## Fase 3 — Diseño responsive · OMITIDA
 
-Meta: que se vea bien en móvil, tablet y escritorio.
+Decisión del proyecto: el portafolio es para pantalla de computadora; no se
+trabaja la versión móvil. Lo esencial que sí quedó y se conserva:
 
-- [ ] Probado con las **DevTools** en modo dispositivo (móvil 375px, tablet 768px, escritorio 1280px).
-- [ ] El texto nunca se sale de la pantalla ni obliga a hacer scroll horizontal.
-- [ ] Definidos **media queries** para al menos un breakpoint (ej. `max-width: 768px`).
-- [ ] En móvil, el menú de navegación es usable (menú hamburguesa **o** enlaces apilados legibles).
-- [ ] Las tarjetas de proyecto pasan a **1 columna** en móvil.
-- [ ] Imágenes con `max-width: 100%` para que no desborden.
-- [ ] Tamaños de fuente ajustados para móvil (título hero no gigante).
-- [ ] Áreas táctiles (botones/enlaces) de mínimo ~44px de alto en móvil.
-- [ ] Probado en un **teléfono real** (abriendo la URL de Live Server en la red local o tras el deploy).
+- [x] Imágenes con `max-width: 100%` (en el reset).
+- [x] `<meta name="viewport">` presente.
+- [x] La página no fuerza scroll horizontal en anchos normales de laptop.
+- [x] Apilado básico en pantallas chicas (heredado de fases previas; no se pulió).
 
-**Fase 3 terminada cuando:** la página es cómoda de leer y navegar en un móvil real.
+*(Si algún día se quiere versión móvil, retomar los puntos originales de esta
+fase desde el historial de git.)*
 
 ---
 
@@ -147,18 +150,17 @@ Meta: que se vea bien en móvil, tablet y escritorio.
 
 Meta: agregar comportamiento con JS puro, bien organizado.
 
-- [ ] `main.js` se carga con `defer` y no lanza errores en la consola.
-- [ ] **Menú móvil**: el botón hamburguesa abre y cierra la navegación.
-- [ ] **Scroll suave** al hacer clic en los enlaces del menú (`scroll-behavior` en CSS o JS).
-- [ ] **Año dinámico** en el footer con `new Date().getFullYear()`.
-- [ ] (Opcional) **Botón de modo oscuro/claro** que cambia una clase en `<body>` y recuerda la preferencia con `localStorage`.
+- [x] `main.js` se carga con `defer` y no lanza errores en la consola.
+- [x] ~~Menú móvil~~ — no aplica (sin versión móvil).
+- [x] **Scroll suave** al hacer clic en los enlaces del menú (`scroll-behavior: smooth` en CSS).
+- [x] **Año dinámico** en el footer con `new Date().getFullYear()`.
+- [x] **Botón de idioma ES/EN**: cambia `<html lang>` y guarda la preferencia en `localStorage`
+  (más un script en el `<head>` que la aplica antes de pintar, para evitar parpadeo).
 - [ ] (Opcional) **Resaltar el enlace activo** del menú según la sección visible (IntersectionObserver).
-- [ ] Si hay formulario de contacto:
-  - [ ] Validación básica en JS (campos no vacíos, correo con formato válido)
-  - [ ] Mensaje de éxito o error visible para el usuario
-- [ ] El código está en **funciones con nombres claros**, sin repetir bloques.
-- [ ] Sin variables globales innecesarias; nada de `var` (usar `const`/`let`).
-- [ ] Consola del navegador **limpia** (sin errores ni `console.log` olvidados).
+- [x] ~~Formulario de contacto~~ — no se incluye (contacto por correo/LinkedIn/GitHub).
+- [x] El código está en **funciones con nombres claros**, sin repetir bloques.
+- [x] Sin variables globales innecesarias; nada de `var` (usar `const`/`let`).
+- [ ] Consola del navegador **limpia** (sin errores ni `console.log` olvidados) — **verifícalo tú** (F12 → Console).
 
 **Fase 4 terminada cuando:** todas las interacciones funcionan y la consola está limpia.
 

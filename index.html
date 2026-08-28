@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portafolio de Jaret Rubio Delgado, estudiante de Ingeniería en Mecatrónica: automatización industrial, simulación de sistemas, redes de comunicación y desarrollo web.">
   <title>Jaret Rubio Delgado — Portafolio</title>
+
+  <!-- Aplica el idioma guardado antes de pintar la página (evita el parpadeo) -->
+  <script>try{var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElement.lang=l;}catch(e){}</script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
@@ -13,18 +17,26 @@
 </head>
 <body>
 
+  <!--
+    BILINGÜE: cada texto visible se escribe dos veces, una con lang="es" y
+    otra con lang="en". El CSS muestra solo el idioma activo según <html lang>.
+    El botón "EN/ES" del header cambia <html lang> y lo guarda en el navegador.
+    Los textos que son 100 % nombres propios (p. ej. "TOEFL ITP") no se duplican.
+  -->
+
   <header>
     <div class="header-inner">
       <a href="#inicio" class="logo">Jaret Rubio Delgado</a>
-      <nav aria-label="Navegación principal">
+      <nav aria-label="Navegación / Navigation">
         <ul>
-          <li><a href="#sobre-mi">Sobre mí</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#experiencia">Experiencia</a></li>
-          <li><a href="#educacion">Educación</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#sobre-mi"><span lang="es">Sobre mí</span><span lang="en">About</span></a></li>
+          <li><a href="#proyectos"><span lang="es">Proyectos</span><span lang="en">Projects</span></a></li>
+          <li><a href="#experiencia"><span lang="es">Experiencia</span><span lang="en">Experience</span></a></li>
+          <li><a href="#educacion"><span lang="es">Educación</span><span lang="en">Education</span></a></li>
+          <li><a href="#contacto"><span lang="es">Contacto</span><span lang="en">Contact</span></a></li>
         </ul>
       </nav>
+      <button id="lang-toggle" type="button" class="lang-toggle">EN</button>
     </div>
   </header>
 
@@ -33,176 +45,267 @@
     <!-- ============ INICIO / HERO ============ -->
     <section id="inicio">
       <h1>Jaret Rubio Delgado</h1>
-      <p>
+      <p lang="es">
         Estudiante de Ingeniería en Mecatrónica enfocado en automatización
         industrial, redes de comunicación y simulación de sistemas — ahora
         ampliando hacia el desarrollo web full-stack.
       </p>
-      <p><a href="#proyectos" class="btn">Ver proyectos</a></p>
+      <p lang="en">
+        Mechatronics Engineering student focused on industrial automation,
+        communication networks, and systems simulation — now expanding into
+        full-stack web development.
+      </p>
+      <p>
+        <a href="#proyectos" class="btn"><span lang="es">Ver proyectos</span><span lang="en">View projects</span></a>
+      </p>
     </section>
 
     <!-- ============ SOBRE MÍ ============ -->
     <section id="sobre-mi">
-      <h2>Sobre mí</h2>
-      <p>
-        Soy Jaret Rubio Delgado, estudiante de Ingeniería en Mecatrónica en el
-        Tecnológico de Monterrey (campus Monterrey). Durante el ciclo 2026–2027
-        participo en el programa DHIK en Alemania: un semestre de estudios en la
-        Hochschule Zittau/Görlitz seguido de un semestre de prácticas
-        profesionales en la industria alemana.
-      </p>
-      <p>
-        Me interesa el punto donde se encuentran el hardware y el software:
-        automatización industrial, robótica, simulación de procesos (gemelos
-        digitales) y redes de comunicación industrial. Recientemente empecé
-        también a desarrollar aplicaciones web, con el objetivo de construir mis
-        propias herramientas y plataformas de principio a fin (frontend y
-        backend).
-      </p>
-      <p>
-        Busco unas prácticas donde pueda combinar la ingeniería de sistemas con
-        el desarrollo de software.
-      </p>
+      <h2><span lang="es">Sobre mí</span><span lang="en">About me</span></h2>
 
-      <h3>Habilidades</h3>
+      <div class="about-grid">
+        <div class="about-text">
+          <p lang="es">
+            Soy Jaret Rubio Delgado, estudiante de Ingeniería en Mecatrónica en el
+            Tecnológico de Monterrey (campus Monterrey). Durante el ciclo 2026–2027
+            participo en el programa DHIK en Alemania: un semestre de estudios en la
+            Hochschule Zittau/Görlitz seguido de un semestre de prácticas
+            profesionales en la industria alemana.
+          </p>
+          <p lang="en">
+            I'm Jaret Rubio Delgado, a Mechatronics Engineering student at
+            Tecnológico de Monterrey (Monterrey campus). During the 2026–2027 cycle
+            I'm taking part in the DHIK program in Germany: one semester of study at
+            Hochschule Zittau/Görlitz followed by one semester of a professional
+            internship in German industry.
+          </p>
+          <p lang="es">
+            Me interesa el punto donde se encuentran el hardware y el software:
+            automatización industrial, robótica, simulación de procesos (gemelos
+            digitales) y redes de comunicación industrial. Recientemente empecé
+            también a desarrollar aplicaciones web, con el objetivo de construir mis
+            propias herramientas y plataformas de principio a fin (frontend y
+            backend).
+          </p>
+          <p lang="en">
+            I'm drawn to where hardware meets software: industrial automation,
+            robotics, process simulation (digital twins), and industrial
+            communication networks. Recently I also started building web
+            applications, aiming to develop my own tools and platforms end to end
+            (frontend and backend).
+          </p>
+          <p lang="es">
+            Busco unas prácticas donde pueda combinar la ingeniería de sistemas con
+            el desarrollo de software.
+          </p>
+          <p lang="en">
+            I'm looking for an internship where I can combine systems engineering
+            with software development.
+          </p>
+        </div>
+
+        <img class="portrait" src="assets/img/foto.jpg" alt="Jaret Rubio Delgado" width="560" height="747">
+      </div>
+
+      <h3><span lang="es">Habilidades</span><span lang="en">Skills</span></h3>
       <dl>
-        <dt>Programación</dt>
-        <dd>Python, C/C++, MATLAB, JavaScript (en aprendizaje), HTML/CSS</dd>
+        <dt><span lang="es">Programación</span><span lang="en">Programming</span></dt>
+        <dd lang="es">Python, C/C++, MATLAB, JavaScript (en aprendizaje), HTML/CSS</dd>
+        <dd lang="en">Python, C/C++, MATLAB, JavaScript (learning), HTML/CSS</dd>
 
-        <dt>Industrial / Automatización</dt>
+        <dt><span lang="es">Industrial / Automatización</span><span lang="en">Industrial / Automation</span></dt>
         <dd>PLC (Schneider Electric, SIEMENS), Ladder Logic, Universal Robots (UR)</dd>
 
-        <dt>Simulación y CAD</dt>
+        <dt><span lang="es">Simulación y CAD</span><span lang="en">Simulation &amp; CAD</span></dt>
         <dd>SolidWorks, MATLAB/Simulink, RobotStudio (ABB), Tecnomatix Plant Simulation, Process Simulate (Siemens)</dd>
 
-        <dt>Microcontroladores</dt>
-        <dd>Experiencia básica con STM32 (adquisición de datos y acondicionamiento de señales) en proyectos académicos</dd>
+        <dt><span lang="es">Microcontroladores</span><span lang="en">Microcontrollers</span></dt>
+        <dd lang="es">Experiencia básica con STM32 (adquisición de datos y acondicionamiento de señales) en proyectos académicos</dd>
+        <dd lang="en">Basic experience with STM32 (data acquisition and signal conditioning) in academic projects</dd>
 
-        <dt>Áreas de interés</dt>
-        <dd>Redes de comunicación industrial, desarrollo web full-stack</dd>
+        <dt><span lang="es">Áreas de interés</span><span lang="en">Areas of interest</span></dt>
+        <dd lang="es">Redes de comunicación industrial, desarrollo web full-stack</dd>
+        <dd lang="en">Industrial communication networks, full-stack web development</dd>
 
-        <dt>Idiomas</dt>
-        <dd>Español (nativo), Inglés (B2 — TOEFL ITP), Alemán (A2 — Goethe A2)</dd>
+        <dt><span lang="es">Idiomas</span><span lang="en">Languages</span></dt>
+        <dd lang="es">Español (nativo), Inglés (B2 — TOEFL ITP), Alemán (A2 — Goethe A2)</dd>
+        <dd lang="en">Spanish (native), English (B2 — TOEFL ITP), German (A2 — Goethe A2)</dd>
       </dl>
     </section>
 
     <!-- ============ PROYECTOS ============ -->
     <section id="proyectos">
-      <h2>Proyectos</h2>
+      <h2><span lang="es">Proyectos</span><span lang="en">Projects</span></h2>
 
       <article>
         <img loading="lazy" src="assets/img/breakout.png" alt="Captura del juego Breakout: bloques de colores en la parte superior y el marcador de puntaje, nivel y vidas." width="1280" height="1000">
         <div class="project-body">
-        <h3>Breakout — juego de arcade en Python</h3>
-        <p>
-          Clon del clásico rompe-bloques, desarrollado desde cero de forma
-          iterativa. Fue mi primer proyecto de programación completo: empecé con
-          una ventana y una pelota que rebota, y lo fui creciendo hasta un juego
-          con niveles, power-ups y puntajes.
-        </p>
-        <ul>
-          <li><strong>Hecho con:</strong> Python 3.11 y Pygame</li>
-          <li>
-            <strong>Incluye:</strong> programación orientada a objetos (paleta,
-            pelota, bloques y power-ups como clases), detección de colisiones,
-            máquina de estados (menú / juego / pausa / game over), múltiples
-            niveles cargados desde archivos de texto, efectos de partículas y
-            sonido, power-ups (paleta ancha, multi-pelota, pelota lenta, vida
-            extra), sistema de vidas, dificultad progresiva y guardado de mejores
-            puntajes en JSON.
-          </li>
-          <li>
-            <strong>Qué aprendí:</strong> cómo se estructura un game loop, POO
-            aplicada, manejo de estados y assets, y diseñar niveles como datos
-            externos en lugar de código.
-          </li>
-        </ul>
-        <p>
-          <a href="https://github.com/jaretjrd-source/breakout">Código en GitHub</a> ·
-          <a href="#">Demo (pendiente)</a>
-        </p>
+          <h3><span lang="es">Breakout — juego de arcade en Python</span><span lang="en">Breakout — arcade game in Python</span></h3>
+          <p lang="es">
+            Clon del clásico rompe-bloques, desarrollado desde cero de forma
+            iterativa. Fue mi primer proyecto de programación completo: empecé con
+            una ventana y una pelota que rebota, y lo fui creciendo hasta un juego
+            con niveles, power-ups y puntajes.
+          </p>
+          <p lang="en">
+            A clone of the classic brick-breaker, built from scratch iteratively.
+            It was my first complete programming project: I started with a window
+            and a bouncing ball and grew it into a game with levels, power-ups, and
+            scoring.
+          </p>
+          <ul>
+            <li lang="es"><strong>Hecho con:</strong> Python 3.11 y Pygame</li>
+            <li lang="en"><strong>Built with:</strong> Python 3.11 and Pygame</li>
+            <li lang="es">
+              <strong>Incluye:</strong> programación orientada a objetos (paleta,
+              pelota, bloques y power-ups como clases), detección de colisiones,
+              máquina de estados (menú / juego / pausa / game over), múltiples
+              niveles cargados desde archivos de texto, efectos de partículas y
+              sonido, power-ups (paleta ancha, multi-pelota, pelota lenta, vida
+              extra), sistema de vidas, dificultad progresiva y guardado de mejores
+              puntajes en JSON.
+            </li>
+            <li lang="en">
+              <strong>Includes:</strong> object-oriented design (paddle, ball,
+              bricks, and power-ups as classes), collision detection, a state
+              machine (menu / play / pause / game over), multiple levels loaded from
+              text files, particle and sound effects, power-ups (wide paddle,
+              multi-ball, slow ball, extra life), a lives system, progressive
+              difficulty, and high-score persistence in JSON.
+            </li>
+            <li lang="es">
+              <strong>Qué aprendí:</strong> cómo se estructura un game loop, POO
+              aplicada, manejo de estados y assets, y diseñar niveles como datos
+              externos en lugar de código.
+            </li>
+            <li lang="en">
+              <strong>What I learned:</strong> how a game loop is structured,
+              applied OOP, handling states and assets, and designing levels as
+              external data instead of code.
+            </li>
+          </ul>
+          <p>
+            <a href="https://github.com/jaretjrd-source/breakout"><span lang="es">Código en GitHub</span><span lang="en">Code on GitHub</span></a>
+            · <span lang="es">Demo (pendiente)</span><span lang="en">Demo (coming soon)</span>
+          </p>
         </div>
       </article>
 
       <article>
         <img loading="lazy" src="assets/img/celda-robotica.jpg" alt="Simulación en RobotStudio de una celda robótica con robots ABB, transportadores y vallado de seguridad." width="1280" height="958">
         <div class="project-body">
-        <h3>Celda robótica — propuesta y simulación</h3>
-        <p>
-          Proyecto de una materia del Tecnológico de Monterrey, con ABB como
-          socio formador. En equipo desarrollamos la propuesta de una celda
-          robótica industrial y la validamos mediante simulación en RobotStudio:
-          definición del layout, alcance del robot y secuencia de operación.
-        </p>
-        <ul>
-          <li><strong>Hecho con:</strong> RobotStudio (ABB)</li>
-          <li><strong>Contexto:</strong> proyecto académico en equipo, Tecnológico de Monterrey · socio formador: ABB</li>
-          <li><strong>Mi rol:</strong> desarrollo de la propuesta y de la simulación</li>
-        </ul>
-        <p><em>Solo propuesta y simulación; no incluye implementación ni datos internos del socio.</em></p>
+          <h3><span lang="es">Celda robótica — propuesta y simulación</span><span lang="en">Robotic cell — proposal and simulation</span></h3>
+          <p lang="es">
+            Proyecto de una materia del Tecnológico de Monterrey, con ABB como
+            socio formador. En equipo desarrollamos la propuesta de una celda
+            robótica industrial y la validamos mediante simulación en RobotStudio:
+            definición del layout, alcance del robot y secuencia de operación.
+          </p>
+          <p lang="en">
+            A university course project at Tecnológico de Monterrey, with ABB as the
+            industry partner. As a team we developed the proposal for an industrial
+            robotic cell and validated it through simulation in RobotStudio: layout
+            definition, robot reach, and operation sequence.
+          </p>
+          <ul>
+            <li lang="es"><strong>Hecho con:</strong> RobotStudio (ABB)</li>
+            <li lang="en"><strong>Built with:</strong> RobotStudio (ABB)</li>
+            <li lang="es"><strong>Contexto:</strong> proyecto académico en equipo, Tecnológico de Monterrey · socio formador: ABB</li>
+            <li lang="en"><strong>Context:</strong> academic team project, Tecnológico de Monterrey · industry partner: ABB</li>
+            <li lang="es"><strong>Mi rol:</strong> desarrollo de la propuesta y de la simulación</li>
+            <li lang="en"><strong>My role:</strong> proposal development and simulation</li>
+          </ul>
+          <p lang="es"><em>Solo propuesta y simulación; no incluye implementación ni datos internos del socio.</em></p>
+          <p lang="en"><em>Proposal and simulation only; no implementation or partner-internal data.</em></p>
         </div>
       </article>
 
       <article>
         <img loading="lazy" src="assets/img/gemelo-digital.jpg" alt="Modelo de simulación en Process Simulate de una línea de producción con transportadores, cajas y una estación de trabajo." width="1280" height="718">
         <div class="project-body">
-        <h3>Gemelo digital de una línea de producción</h3>
-        <p>
-          Proyecto de una materia del Tecnológico de Monterrey, con Carrier como
-          socio formador. Construimos el gemelo digital de una línea de
-          producción para modelar el estado actual y comparar propuestas de
-          mejora sobre el flujo del proceso.
-        </p>
-        <ul>
-          <li><strong>Hecho con:</strong> Tecnomatix Plant Simulation y Process Simulate (Siemens)</li>
-          <li><strong>Contexto:</strong> proyecto académico en equipo, Tecnológico de Monterrey · socio formador: Carrier</li>
-          <li><strong>Mi rol:</strong> modelado del gemelo digital y análisis de escenarios</li>
-        </ul>
-        <p><em>Solo propuesta y simulación; no incluye datos de producción del socio.</em></p>
+          <h3><span lang="es">Gemelo digital de una línea de producción</span><span lang="en">Digital twin of a production line</span></h3>
+          <p lang="es">
+            Proyecto de una materia del Tecnológico de Monterrey, con Carrier como
+            socio formador. Construimos el gemelo digital de una línea de
+            producción para modelar el estado actual y comparar propuestas de
+            mejora sobre el flujo del proceso.
+          </p>
+          <p lang="en">
+            A university course project at Tecnológico de Monterrey, with Carrier as
+            the industry partner. We built the digital twin of a production line to
+            model the current state and compare improvement proposals on the process
+            flow.
+          </p>
+          <ul>
+            <li lang="es"><strong>Hecho con:</strong> Tecnomatix Plant Simulation y Process Simulate (Siemens)</li>
+            <li lang="en"><strong>Built with:</strong> Tecnomatix Plant Simulation and Process Simulate (Siemens)</li>
+            <li lang="es"><strong>Contexto:</strong> proyecto académico en equipo, Tecnológico de Monterrey · socio formador: Carrier</li>
+            <li lang="en"><strong>Context:</strong> academic team project, Tecnológico de Monterrey · industry partner: Carrier</li>
+            <li lang="es"><strong>Mi rol:</strong> modelado del gemelo digital y análisis de escenarios</li>
+            <li lang="en"><strong>My role:</strong> digital twin modeling and scenario analysis</li>
+          </ul>
+          <p lang="es"><em>Solo propuesta y simulación; no incluye datos de producción del socio.</em></p>
+          <p lang="en"><em>Proposal and simulation only; no partner production data.</em></p>
         </div>
       </article>
     </section>
 
     <!-- ============ EXPERIENCIA ============ -->
     <section id="experiencia">
-      <h2>Experiencia</h2>
+      <h2><span lang="es">Experiencia</span><span lang="en">Experience</span></h2>
 
       <article>
-        <h3>Practicante en Investigación de Redes Industriales</h3>
-        <p><strong>Neoterra Lumina</strong> · Hermosillo, Sonora, México · mayo 2026 – septiembre 2026</p>
+        <h3><span lang="es">Practicante en Investigación de Redes Industriales</span><span lang="en">Industrial Networks Research Intern</span></h3>
+        <p lang="es"><strong>Neoterra Lumina</strong> · Hermosillo, Sonora, México · mayo 2026 – septiembre 2026</p>
+        <p lang="en"><strong>Neoterra Lumina</strong> · Hermosillo, Sonora, Mexico · May 2026 – September 2026</p>
         <ul>
-          <li>Recolección y organización de datos sobre la infraestructura de red existente para apoyar decisiones de ingeniería.</li>
-          <li>Elaboración de propuestas para la mejora de la infraestructura de red de comunicación.</li>
-          <li>Documentación técnica y presentación de hallazgos al equipo.</li>
+          <li lang="es">Recolección y organización de datos sobre la infraestructura de red existente para apoyar decisiones de ingeniería.</li>
+          <li lang="en">Collected and organized data on the existing network infrastructure to support engineering decisions.</li>
+          <li lang="es">Elaboración de propuestas para la mejora de la infraestructura de red de comunicación.</li>
+          <li lang="en">Developed proposals to improve the communication network infrastructure.</li>
+          <li lang="es">Documentación técnica y presentación de hallazgos al equipo.</li>
+          <li lang="en">Produced technical documentation and presented findings to the team.</li>
         </ul>
       </article>
     </section>
 
     <!-- ============ EDUCACIÓN ============ -->
     <section id="educacion">
-      <h2>Educación</h2>
+      <h2><span lang="es">Educación</span><span lang="en">Education</span></h2>
 
-      <article>
-        <h3>Tecnológico de Monterrey — Monterrey, México</h3>
-        <p>Ingeniería en Mecatrónica · agosto 2023 – junio 2027 (graduación esperada)</p>
-        <p>Promedio: 93.9 / 100 · Beca de Excelencia Académica (40 %)</p>
+      <article class="edu-item">
+        <img class="edu-logo" src="assets/img/TEC.png" alt="Tecnológico de Monterrey" width="277" height="327">
+        <div>
+          <h3>Tecnológico de Monterrey — <span lang="es">Monterrey, México</span><span lang="en">Monterrey, Mexico</span></h3>
+          <p lang="es">Ingeniería en Mecatrónica · agosto 2023 – junio 2027 (graduación esperada)</p>
+          <p lang="en">B.S. in Mechatronics Engineering · August 2023 – June 2027 (expected graduation)</p>
+          <p lang="es">Promedio: 93.9 / 100 · Beca de Excelencia Académica (40 %)</p>
+          <p lang="en">GPA: 93.9 / 100 · Academic Merit Scholarship (40%)</p>
+        </div>
       </article>
 
       <article>
-        <h3>Programa DHIK — Alemania · ciclo 2026–2027</h3>
-        <p>
+        <h3><span lang="es">Programa DHIK — Alemania · ciclo 2026–2027</span><span lang="en">DHIK program — Germany · 2026–2027 cycle</span></h3>
+        <p lang="es">
           Programa de un año: un semestre de estudios en la Hochschule
           Zittau/Görlitz (semestre de invierno 2026/2027, inicio de clases el
           5 de octubre de 2026) seguido de un semestre de prácticas profesionales
           en la industria alemana.
         </p>
+        <p lang="en">
+          A one-year program: one semester of study at Hochschule Zittau/Görlitz
+          (winter semester 2026/2027, classes starting 5 October 2026) followed by
+          one semester of a professional internship in German industry.
+        </p>
       </article>
 
-      <h3>Certificaciones</h3>
+      <h3><span lang="es">Certificaciones</span><span lang="en">Certifications</span></h3>
       <ul>
         <li>PLC Fundamentals — Udemy (2026)</li>
         <li>e-Series Core Track — Universal Robots (2026)</li>
-        <li>Electrónica Básica y Circuitos Integrados Lineales — ITESM (2025)</li>
+        <li lang="es">Electrónica Básica y Circuitos Integrados Lineales — ITESM (2025)</li>
+        <li lang="en">Basic Electronics and Linear Integrated Circuits — ITESM (2025)</li>
         <li>Goethe-Zertifikat A2 (2026)</li>
         <li>TOEFL ITP</li>
       </ul>
@@ -210,9 +313,9 @@
 
     <!-- ============ CONTACTO ============ -->
     <section id="contacto">
-      <h2>Contacto</h2>
+      <h2><span lang="es">Contacto</span><span lang="en">Contact</span></h2>
       <ul>
-        <li>Correo: <a href="mailto:jaret.jrd@gmail.com">jaret.jrd@gmail.com</a></li>
+        <li><span lang="es">Correo:</span><span lang="en">Email:</span> <a href="mailto:jaret.jrd@gmail.com">jaret.jrd@gmail.com</a></li>
         <li>LinkedIn: <a href="https://www.linkedin.com/in/jaretrubiodelgado">linkedin.com/in/jaretrubiodelgado</a></li>
         <li>GitHub: <a href="https://github.com/jaretjrd-source">github.com/jaretjrd-source</a></li>
       </ul>
@@ -221,7 +324,7 @@
   </main>
 
   <footer>
-    <p>© 2026 Jaret Rubio Delgado</p>
+    <p>© <span id="year">2026</span> Jaret Rubio Delgado</p>
   </footer>
 
 </body>
