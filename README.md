@@ -28,19 +28,20 @@ Objetivo: tener una página publicada que muestre quién soy, mis proyectos (inc
 
 Meta: tener las herramientas listas y el proyecto versionado.
 
-- [ ] Instalar y abrir **Visual Studio Code** en esta carpeta (`Pagina_web`).
+- [x] Instalar y abrir **Visual Studio Code** en esta carpeta (`Pagina_web`).
 - [ ] Instalar la extensión **Live Server** en VS Code (para ver cambios en el navegador al guardar).
-- [ ] Instalar **Git** y confirmar que funciona (`git --version` en la terminal).
-- [ ] Ejecutar `git init` dentro de la carpeta `Pagina_web`.
-- [ ] Crear un archivo `.gitignore` con al menos: `node_modules/`, `.DS_Store`, `*.log`.
-- [ ] Crear una cuenta en **GitHub** (si aún no tengo).
-- [ ] Crear un repositorio vacío en GitHub llamado `portafolio` (o `pagina-web`).
-- [ ] Conectar el repo local con GitHub y hacer el primer `git push` con solo el README.
-- [ ] Definir la estructura de carpetas:
-  - [ ] `index.html` en la raíz
-  - [ ] carpeta `css/` con `styles.css`
-  - [ ] carpeta `js/` con `main.js`
-  - [ ] carpeta `assets/` para imágenes (con subcarpeta `img/`)
+- [x] Instalar **Git** y confirmar que funciona (`git --version` en la terminal). — v2.55.0
+- [x] Ejecutar `git init` dentro de la carpeta `Pagina_web`.
+- [x] Crear un archivo `.gitignore` con al menos: `node_modules/`, `.DS_Store`, `*.log`.
+- [x] Configurar identidad de Git en el repo: `user.email` y `user.name` ("Jaret Rubio").
+- [x] Crear una cuenta en **GitHub**.
+- [x] Crear un repositorio vacío en GitHub llamado `portafolio`.
+- [x] Conectar el repo local con GitHub y hacer el primer `git push`.
+- [x] Definir la estructura de carpetas:
+  - [x] `index.html` en la raíz
+  - [x] carpeta `css/` con `styles.css`
+  - [x] carpeta `js/` con `main.js`
+  - [x] carpeta `assets/` para imágenes (con subcarpeta `img/`)
 
 **Fase 0 terminada cuando:** puedo abrir `index.html` con Live Server y el proyecto está subido a GitHub.
 
@@ -225,5 +226,5 @@ Ideas para seguir practicando una vez publicado:
 ## Notas del proyecto
 
 - **URL del portafolio:** _(pendiente — completar en Fase 7)_
-- **Repo de GitHub:** _(pendiente — completar en Fase 0)_
+- **Repo de GitHub:** https://github.com/jaretjrd-source/portafolio
 - **Fecha de inicio:** 2026-08-28
