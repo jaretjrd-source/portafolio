@@ -288,6 +288,10 @@ section:last-child {
   margin-bottom: 0;
 }
 
+#sobre-mi > h3 {
+  margin-top: 2.25rem;
+}
+
 .portrait {
   width: 100%;
   height: auto;
