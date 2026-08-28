@@ -61,32 +61,34 @@ Meta: tener las herramientas listas y el proyecto versionado.
 
 Meta: todo el contenido escrito y ordenado en HTML semántico, **sin preocuparme por el diseño todavía**.
 
-- [ ] `index.html` tiene la estructura base correcta: `<!DOCTYPE html>`, `<html lang="es">`, `<head>` y `<body>`.
-- [ ] En el `<head>`: `<meta charset="UTF-8">`, `<meta name="viewport">`, `<title>` con mi nombre, y `<meta name="description">`.
-- [ ] Enlazado el CSS con `<link rel="stylesheet" href="css/styles.css">`.
-- [ ] Enlazado el JS con `<script src="js/main.js" defer></script>`.
-- [ ] **Header** con:
-  - [ ] Mi nombre o logo
-  - [ ] Menú de navegación con enlaces internos (`#sobre-mi`, `#proyectos`, `#contacto`)
-- [ ] Sección **Hero / Inicio** con:
-  - [ ] Título principal (`<h1>`) que diga quién soy en una frase
-  - [ ] Subtítulo corto
-  - [ ] Un botón/enlace de llamada a la acción (ej. "Ver proyectos")
-- [ ] Sección **Sobre mí** (`id="sobre-mi"`) con:
-  - [ ] 1 o 2 párrafos de presentación
-  - [ ] Lista de tecnologías/habilidades que estoy aprendiendo
+- [x] `index.html` tiene la estructura base correcta: `<!DOCTYPE html>`, `<html lang="es">`, `<head>` y `<body>`.
+- [x] En el `<head>`: `<meta charset="UTF-8">`, `<meta name="viewport">`, `<title>` con mi nombre, y `<meta name="description">`.
+- [x] Enlazado el CSS con `<link rel="stylesheet" href="css/styles.css">`.
+- [x] Enlazado el JS con `<script src="js/main.js" defer></script>`.
+- [x] **Header** con:
+  - [x] Mi nombre o logo
+  - [x] Menú de navegación con enlaces internos (`#sobre-mi`, `#proyectos`, `#contacto`)
+- [x] Sección **Hero / Inicio** con:
+  - [x] Título principal (`<h1>`) que diga quién soy en una frase
+  - [x] Subtítulo corto
+  - [x] Un botón/enlace de llamada a la acción (ej. "Ver proyectos")
+- [x] Sección **Sobre mí** (`id="sobre-mi"`) con:
+  - [x] 1 o 2 párrafos de presentación
+  - [x] Lista de tecnologías/habilidades que estoy aprendiendo
   - [ ] (Opcional) una foto mía en `assets/img/`
-- [ ] Sección **Proyectos** (`id="proyectos"`) con:
-  - [ ] Al menos **2 tarjetas** de proyecto (una es el juego)
+- [x] Sección **Proyectos** (`id="proyectos"`) con:
+  - [x] Al menos **2 tarjetas** de proyecto (una es el juego)
   - [ ] Cada tarjeta tiene: título, descripción corta, imagen/captura, enlace a demo y enlace a código
-- [ ] Sección **Contacto** (`id="contacto"`) con:
-  - [ ] Mi correo (como enlace `mailto:`)
-  - [ ] Enlaces a GitHub y LinkedIn (u otras redes)
+    → texto y estructura listos; **faltan**: subir el juego a GitHub y poner el enlace real,
+      y reemplazar los `placeholder.svg` por capturas reales de los 3 proyectos
+- [x] Sección **Contacto** (`id="contacto"`) con:
+  - [x] Mi correo (como enlace `mailto:`)
+  - [x] Enlaces a GitHub y LinkedIn (u otras redes)
   - [ ] (Opcional) un formulario de contacto con campos nombre, correo y mensaje
-- [ ] **Footer** con año actual y mi nombre.
-- [ ] Todo el texto real está escrito (nada de "Lorem ipsum" ni "TODO").
-- [ ] Las imágenes tienen atributo `alt` descriptivo.
-- [ ] La página valida sin errores en <https://validator.w3.org/>.
+- [x] **Footer** con año actual y mi nombre.
+- [ ] Todo el texto real está escrito (nada de "Lorem ipsum" ni "TODO") — quedan marcadores "(pendiente)" en los enlaces del juego.
+- [x] Las imágenes tienen atributo `alt` descriptivo.
+- [ ] La página valida sin errores en <https://validator.w3.org/> (pega la URL de Live Server o el contenido).
 
 **Fase 1 terminada cuando:** el contenido completo se lee de arriba a abajo y tiene sentido, aunque se vea "feo".
 
