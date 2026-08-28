@@ -3,6 +3,16 @@
 Proyecto para construir mi portafolio web desde cero con **HTML, CSS y JavaScript puro** (sin frameworks).
 Objetivo: tener una página publicada que muestre quién soy, mis proyectos (incluido mi juego) y cómo contactarme.
 
+## Decisiones del proyecto
+
+- **Idioma:** bilingüe español / inglés. Se redacta y aprueba primero en español,
+  luego se traduce. El HTML se construye en español en la Fase 1; el botón de
+  cambio de idioma se implementa en la Fase 4.
+- **Práctica en Neoterra Lumina:** solo versión genérica (puesto, fechas, área).
+  Sin métricas, arquitectura ni detalles internos, por confidencialidad del contrato.
+- **Datos personales:** el CV, contratos e identificaciones NO se suben al repo
+  (bloqueados en `.gitignore`). Contacto público: solo correo, LinkedIn y GitHub.
+
 ## Cómo usar este README
 
 - Cada **fase** se trabaja en orden.
