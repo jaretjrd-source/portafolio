@@ -41,8 +41,8 @@ Objetivo: tener una página publicada que muestre quién soy, mis proyectos (inc
 - [~] Fase 3 — Diseño responsive — **OMITIDA** (no se busca versión móvil)
 - [x] Fase 4 — Interactividad (JavaScript)
 - [x] Fase 5 — Integrar el juego (demo jugable con pygbag)
-- [x] Fase 6 — Accesibilidad y pulido (Lighthouse se confirma en Fase 7)
-- [ ] Fase 7 — Publicación (deploy)
+- [x] Fase 6 — Accesibilidad y pulido (Lighthouse 98 / 100 / 100 / 100)
+- [x] Fase 7 — Publicación · https://jaretjrd-source.github.io/portafolio/
 - [ ] Fase 8 — Mejoras futuras (opcional)
 
 ---
@@ -203,11 +203,15 @@ Meta: calidad final antes de publicar.
 - [x] `prefers-reduced-motion`: se desactiva el scroll suave.
 - [x] Imágenes comprimidas (~440 KB en total, todas ≤ 1280 px).
 - [x] Eliminado código muerto (`placeholder.svg`, selector CSS sin uso).
-- [ ] Ejecutar **Lighthouse** (DevTools → pestaña Lighthouse) tras el deploy y
-  confirmar los 4 puntajes ≥ 90. **Hazlo tú en la Fase 7** (necesita la URL pública).
+- [x] Fuente Inter auto-alojada (`assets/fonts/inter-latin.woff2`) para quitar el
+  render-blocking de Google Fonts.
+- [x] **Lighthouse** en el sitio publicado:
+  - [x] Performance 98
+  - [x] Accessibility 100
+  - [x] Best Practices 100
+  - [x] SEO 100
 
-**Fase 6 terminada cuando:** navegación por teclado OK y checklist de arriba completa
-(Lighthouse se confirma en Fase 7).
+**Fase 6 terminada.**
 
 ---
 
@@ -215,20 +219,17 @@ Meta: calidad final antes de publicar.
 
 Meta: la página en línea con una URL que puedo compartir.
 
-- [ ] Todo el trabajo está commiteado y en la rama `main` de GitHub.
-- [ ] Elegido el hosting: **GitHub Pages** (o Netlify / Vercel).
-- [ ] Configurado el deploy:
-  - [ ] GitHub Pages: activado en Settings → Pages, rama `main`, carpeta raíz
-  - [ ] (o) Netlify/Vercel: repo conectado y build configurado
-- [ ] La URL pública abre correctamente.
-- [ ] Revisado que **todas las rutas** funcionan online (CSS, JS, imágenes, el juego): sin errores 404 en la consola.
-- [ ] Revisadas mayúsculas/minúsculas en nombres de archivos (los servidores distinguen, Windows no).
-- [ ] Probada la URL en móvil real y en otra computadora.
-- [ ] (Opcional) Configurado un dominio propio.
-- [ ] Añadida la URL del sitio a: descripción del repo de GitHub, mi perfil de GitHub, mi LinkedIn.
-- [ ] Actualizado este README con la URL final del portafolio.
+- [x] Todo el trabajo está commiteado y en la rama `main` de GitHub.
+- [x] Hosting: **GitHub Pages** (rama `main`, carpeta raíz).
+- [x] La URL pública abre correctamente: **https://jaretjrd-source.github.io/portafolio/**
+- [x] Revisado que **todas las rutas** funcionan online (CSS, JS, imágenes, el juego): todo 200.
+- [x] Nombres de archivo en minúsculas / consistentes (verificado contra la URL pública).
+- [x] Demo del juego probada desde el sitio publicado (llega a la pantalla jugable).
+- [ ] (Opcional) Configurar un dominio propio.
+- [ ] Añadir la URL del sitio a: descripción del repo de GitHub, perfil de GitHub, LinkedIn. **← te toca**
+- [ ] Probar la URL en tu teléfono y en otra computadora. **← te toca**
 
-**Fase 7 terminada cuando:** cualquier persona puede abrir mi portafolio desde un enlace y todo funciona.
+**Fase 7 terminada** (salvo los 3 pasos personales de arriba).
 
 ---
 
@@ -248,6 +249,7 @@ Ideas para seguir practicando una vez publicado:
 
 ## Notas del proyecto
 
-- **URL del portafolio:** _(pendiente — completar en Fase 7)_
+- **URL del portafolio:** https://jaretjrd-source.github.io/portafolio/
 - **Repo de GitHub:** https://github.com/jaretjrd-source/portafolio
+- **Repo del juego:** https://github.com/jaretjrd-source/breakout
 - **Fecha de inicio:** 2026-08-28
