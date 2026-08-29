@@ -51,9 +51,34 @@ html {
   scroll-padding-top: 5rem; /* para que el header fijo no tape los títulos */
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 img {
   max-width: 100%;
   display: block;
+}
+
+/* Enlace "saltar al contenido": oculto hasta recibir foco por teclado */
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -3rem;
+  z-index: 100;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: top 0.15s ease;
+}
+
+.skip-link:focus {
+  top: 0.75rem;
+  text-decoration: none;
 }
 
 /* ---------- 3. Base ---------- */
@@ -369,6 +394,13 @@ dd {
   margin-bottom: 0;
 }
 
+.play-link::before {
+  content: "\25B6"; /* triángulo de "play", decorativo */
+  font-size: 0.7em;
+  margin-right: 0.4em;
+  vertical-align: 1px;
+}
+
 #proyectos ul {
   margin: 0.5rem 0 0.9rem 1.1rem;
 }
@@ -423,7 +455,6 @@ dd {
 }
 
 #experiencia ul,
-#certificaciones + ul,
 #educacion ul {
   margin-left: 1.1rem;
 }

@@ -41,7 +41,7 @@ Objetivo: tener una página publicada que muestre quién soy, mis proyectos (inc
 - [~] Fase 3 — Diseño responsive — **OMITIDA** (no se busca versión móvil)
 - [x] Fase 4 — Interactividad (JavaScript)
 - [x] Fase 5 — Integrar el juego (demo jugable con pygbag)
-- [ ] Fase 6 — Accesibilidad y pulido
+- [x] Fase 6 — Accesibilidad y pulido (Lighthouse se confirma en Fase 7)
 - [ ] Fase 7 — Publicación (deploy)
 - [ ] Fase 8 — Mejoras futuras (opcional)
 
@@ -190,24 +190,24 @@ Meta: que mi juego sea accesible desde el portafolio.
 
 Meta: calidad final antes de publicar.
 
-- [ ] Un solo `<h1>` por página y jerarquía de encabezados correcta (`h2`, `h3`...).
-- [ ] Contraste de color suficiente (revisado con el checker de las DevTools o WebAIM).
-- [ ] Navegable **solo con el teclado** (Tab llega a todos los enlaces/botones en orden lógico).
-- [ ] Foco visible en todos los elementos interactivos.
-- [ ] Todas las imágenes con `alt` correcto (vacío `alt=""` solo si son decorativas).
-- [ ] Enlaces con texto descriptivo (nada de "clic aquí").
-- [ ] Añadido un `favicon` en `assets/`.
-- [ ] Metadatos para compartir en redes: `og:title`, `og:description`, `og:image`.
-- [ ] Revisada la ortografía de todos los textos.
-- [ ] Ejecutado **Lighthouse** (DevTools) y logrado:
-  - [ ] Performance ≥ 90
-  - [ ] Accessibility ≥ 90
-  - [ ] Best Practices ≥ 90
-  - [ ] SEO ≥ 90
-- [ ] Probado sin conexión lenta que las imágenes no pesen de más (comprimidas).
-- [ ] Eliminado todo código muerto y comentado que no se use.
+- [x] Un solo `<h1>` por página y jerarquía de encabezados correcta (`h2`, `h3`...).
+- [x] Contraste de color suficiente (paleta revisada: texto y acento ≥ 4.5:1 en claro y oscuro).
+- [x] Navegable **solo con el teclado** + enlace "Saltar al contenido" al inicio.
+- [x] Foco visible en todos los elementos interactivos (`:focus-visible`).
+- [x] Todas las imágenes con `alt` correcto; el triángulo de "play" es decorativo (CSS `::before`).
+- [x] Enlaces con texto descriptivo.
+- [x] Añadido un `favicon` (`assets/favicon.svg`) y `theme-color`.
+- [x] Metadatos para compartir en redes: `og:title`, `og:description`, `og:image`
+  (`assets/img/og-image.jpg`, 1200×630), `twitter:card`.
+- [x] Revisada la ortografía de todos los textos (ES y EN).
+- [x] `prefers-reduced-motion`: se desactiva el scroll suave.
+- [x] Imágenes comprimidas (~440 KB en total, todas ≤ 1280 px).
+- [x] Eliminado código muerto (`placeholder.svg`, selector CSS sin uso).
+- [ ] Ejecutar **Lighthouse** (DevTools → pestaña Lighthouse) tras el deploy y
+  confirmar los 4 puntajes ≥ 90. **Hazlo tú en la Fase 7** (necesita la URL pública).
 
-**Fase 6 terminada cuando:** Lighthouse pasa los 4 puntajes y la navegación por teclado funciona.
+**Fase 6 terminada cuando:** navegación por teclado OK y checklist de arriba completa
+(Lighthouse se confirma en Fase 7).
 
 ---
 
