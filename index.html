@@ -20,9 +20,7 @@
   <!-- Aplica el idioma guardado antes de pintar la página (evita el parpadeo) -->
   <script>try{var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElement.lang=l;}catch(e){}</script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/main.js" defer></script>
 </head>
@@ -118,7 +116,7 @@
           </p>
         </div>
 
-        <img class="portrait" src="assets/img/foto.jpg" alt="Jaret Rubio Delgado" width="560" height="747">
+        <img loading="lazy" class="portrait" src="assets/img/foto.jpg" alt="Jaret Rubio Delgado" width="560" height="747">
       </div>
 
       <h3><span lang="es">Habilidades</span><span lang="en">Skills</span></h3>
@@ -288,7 +286,7 @@
       <h2><span lang="es">Educación</span><span lang="en">Education</span></h2>
 
       <article class="edu-item">
-        <img class="edu-logo" src="assets/img/TEC.png" alt="Tecnológico de Monterrey" width="277" height="327">
+        <img loading="lazy" class="edu-logo" src="assets/img/TEC.png" alt="Tecnológico de Monterrey" width="277" height="327">
         <div>
           <h3>Tecnológico de Monterrey — <span lang="es">Monterrey, México</span><span lang="en">Monterrey, Mexico</span></h3>
           <p lang="es">Ingeniería en Mecatrónica · agosto 2023 – junio 2027 (graduación esperada)</p>

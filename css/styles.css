@@ -1,10 +1,20 @@
 /* ===================================================
    Portafolio — Jaret Rubio Delgado
    Estilo: "Minimal técnico"
-   - Tipografía: Inter en todo
+   - Tipografía: Inter en todo (auto-alojada, ver más abajo)
    - Fondo blanco, texto casi negro, un acento gris azulado
    - Modo oscuro automático según el sistema
    =================================================== */
+
+/* ---------- 0. Tipografía (auto-alojada, sin Google Fonts) ---------- */
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900; /* fuente variable: un solo archivo cubre todos los pesos */
+  font-display: swap;
+  src: url("../assets/fonts/inter-latin.woff2") format("woff2");
+}
 
 /* ---------- 1. Variables de color ---------- */
 
