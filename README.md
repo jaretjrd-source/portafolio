@@ -16,7 +16,8 @@ Objetivo: tener una página publicada que muestre quién soy, mis proyectos (inc
   sistema, sin botón. Ancho de página 920px; bloques de texto largos limitados
   a ~60 caracteres para lectura cómoda.
 - **Juego Breakout:** repo propio en https://github.com/jaretjrd-source/breakout
-  (código Python/Pygame). El portafolio enlaza ahí desde la tarjeta del proyecto.
+  (código Python/Pygame). Compilado a WebAssembly con `pygbag`; la build web vive
+  en `juego/` y la tarjeta del proyecto enlaza a "▶ Jugar en el navegador".
 - **Práctica en Neoterra Lumina:** solo versión genérica (puesto, fechas, área).
   Sin métricas, arquitectura ni detalles internos, por confidencialidad del contrato.
 - **Datos personales:** el CV, contratos e identificaciones NO se suben al repo
@@ -38,8 +39,8 @@ Objetivo: tener una página publicada que muestre quién soy, mis proyectos (inc
 - [x] Fase 1 — Estructura y contenido (HTML)
 - [x] Fase 2 — Estilos y diseño (CSS)
 - [~] Fase 3 — Diseño responsive — **OMITIDA** (no se busca versión móvil)
-- [ ] Fase 4 — Interactividad (JavaScript)
-- [ ] Fase 5 — Integrar el juego
+- [x] Fase 4 — Interactividad (JavaScript)
+- [x] Fase 5 — Integrar el juego (demo jugable con pygbag)
 - [ ] Fase 6 — Accesibilidad y pulido
 - [ ] Fase 7 — Publicación (deploy)
 - [ ] Fase 8 — Mejoras futuras (opcional)
@@ -170,15 +171,16 @@ Meta: agregar comportamiento con JS puro, bien organizado.
 
 Meta: que mi juego sea accesible desde el portafolio.
 
-- [ ] Decidir el formato de integración:
-  - [ ] Opción A: página propia `juego.html` con el juego embebido
-  - [ ] Opción B: enlace a una demo publicada aparte
-- [ ] Copiar los archivos del juego a una carpeta `juego/` (o dejar claro el enlace externo).
-- [ ] La tarjeta del juego en "Proyectos" enlaza a la demo funcionando.
-- [ ] La tarjeta del juego enlaza al **código en GitHub**.
-- [ ] Añadida una **captura de pantalla** real del juego en la tarjeta.
-- [ ] Escrita una descripción de 2–3 líneas: qué es, con qué lo hice, qué aprendí.
-- [ ] El juego carga y se puede jugar desde el sitio publicado (probado tras el deploy).
+- [x] Decidir el formato de integración: **Opción B mejorada** — demo jugable
+  en el navegador, compilada de Python a WebAssembly con `pygbag`.
+- [x] Archivos del juego (build web) en la carpeta `juego/` (ver `juego/LEEME.md`).
+- [x] La tarjeta del juego enlaza a "▶ Jugar en el navegador" (`juego/index.html`).
+- [x] La tarjeta del juego enlaza al **código en GitHub**.
+- [x] Añadida una **captura de pantalla** real del juego en la tarjeta.
+- [x] Escrita una descripción de qué es, con qué lo hice y qué aprendí.
+- [x] El juego carga y se puede jugar (verificado con Chrome headless: llega a la
+  pantalla de juego con puntaje/nivel/vidas).
+- [ ] Confirmar que funciona tras el deploy real (Fase 7).
 
 **Fase 5 terminada cuando:** desde el portafolio puedo llegar al juego y jugarlo.
 

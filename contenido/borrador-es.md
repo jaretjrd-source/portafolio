@@ -129,6 +129,7 @@ seguido de un semestre de prácticas profesionales en la industria alemana.
 
 - PLC Fundamentals — Udemy (2026)
 - e-Series Core Track — Universal Robots (2026)
+- Cobot Material Handling for the GoFa with OmniCore — ABB (2026)
 - Electrónica Básica y Circuitos Integrados Lineales — ITESM (2025)
 - Goethe-Zertifikat A2 (2026)
 - TOEFL ITP

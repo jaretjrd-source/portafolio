@@ -123,6 +123,7 @@ semester of a professional internship in German industry.
 
 - PLC Fundamentals — Udemy (2026)
 - e-Series Core Track — Universal Robots (2026)
+- Cobot Material Handling for the GoFa with OmniCore — ABB (2026)
 - Basic Electronics and Linear Integrated Circuits — ITESM (2025)
 - Goethe-Zertifikat A2 (2026)
 - TOEFL ITP
