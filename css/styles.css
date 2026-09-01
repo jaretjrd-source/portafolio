@@ -383,19 +383,23 @@ dd {
   border-radius: var(--radius);
   padding: 1.75rem;
   margin-bottom: 1.5rem;
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 1.75rem;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 #proyectos article:last-child {
   margin-bottom: 0;
 }
 
+/* Imagen grande arriba, texto debajo. Se recorta a una altura de banner
+   (anclada arriba) para que las tarjetas no se hagan enormes. */
 #proyectos img {
   width: 100%;
   height: auto;
+  max-height: 460px;
+  object-fit: cover;
+  object-position: center top;
   border-radius: 8px;
   border: 1px solid var(--border);
 }
@@ -422,8 +426,11 @@ dd {
 
 @media (max-width: 640px) {
   #proyectos article {
-    grid-template-columns: 1fr;
     gap: 1.1rem;
+  }
+
+  #proyectos img {
+    max-height: 300px;
   }
 }
 
