@@ -55,7 +55,26 @@ conditioning) in academic projects
 
 ## Projects
 
-### 1. Breakout — arcade game in Python
+### 1. PID control playground — interactive web app
+A web app for learning PID control by playing with it. A simulated plant (like a
+motor's speed) is controlled by a PID you tune in real time: sliders for Kp, Ki
+and Kd, presets, and a live chart with performance metrics. It is my second
+programming project, built to learn modern JavaScript.
+
+- **Built with:** JavaScript (ES modules) and Vite, no frameworks
+- **Includes:** a first-order plant simulation integrated with Euler, a PID
+  controller with anti-windup, a crisp `<canvas>` chart with HiDPI support and
+  dark mode, metrics computed on the fly (overshoot, rise time, ±2 % settling
+  time, steady-state error), tuning presets, step response, and
+  `prefers-reduced-motion` support.
+- **What I learned:** modern JavaScript with ES modules, the animation loop with
+  `requestAnimationFrame` and a fixed time step, drawing on `<canvas>`, and
+  splitting simulation, control, and presentation into modules with pure
+  functions.
+- **Code:** https://github.com/jaretjrd-source/playground-pid
+- **Demo:** https://jaretjrd-source.github.io/playground-pid/
+
+### 2. Breakout — arcade game in Python
 A clone of the classic brick-breaker, built from scratch iteratively. It was my
 first complete programming project: I started with a window and a bouncing ball
 and grew it into a game with levels, power-ups, and scoring.
@@ -71,7 +90,7 @@ and grew it into a game with levels, power-ups, and scoring.
 - **Code:** _(pending — push to GitHub)_
 - **Demo:** _(pending — short GIF or video)_
 
-### 2. Robotic cell — proposal and simulation (university course project)
+### 3. Robotic cell — proposal and simulation (university course project)
 A course project at Tecnológico de Monterrey, with ABB as the industry partner.
 As a team we developed the **proposal** for an industrial robotic cell and
 validated it through **simulation** in RobotStudio: layout definition, robot
@@ -82,7 +101,7 @@ reach, and operation sequence.
 - **My role:** proposal development and simulation
 - *(Proposal and simulation only; no implementation or partner-internal data.)*
 
-### 3. Digital twin of a production line (university course project)
+### 4. Digital twin of a production line (university course project)
 A course project at Tecnológico de Monterrey, with Carrier as the industry
 partner. We built the **digital twin** of a production line to model the current
 state and compare improvement proposals on the process flow.

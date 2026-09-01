@@ -150,6 +150,65 @@
       <h2><span lang="es">Proyectos</span><span lang="en">Projects</span></h2>
 
       <article>
+        <img loading="lazy" src="assets/img/playground-pid.png" alt="Captura del Playground de control PID: la gráfica muestra la respuesta al escalón con sobrepaso y la línea del pico; debajo, las métricas (sobrepaso 23,1 %, tiempo de subida 0,45 s) y los deslizadores de Kp, Ki y Kd." width="1920" height="990">
+        <div class="project-body">
+          <h3><span lang="es">Playground de control PID — app web interactiva</span><span lang="en">PID control playground — interactive web app</span></h3>
+          <p lang="es">
+            Aplicación web para entender el control PID jugando. Una planta
+            simulada (como la velocidad de un motor) se controla con un PID que
+            ajustas en tiempo real: deslizadores para Kp, Ki y Kd, presets, y una
+            gráfica en vivo con las métricas de desempeño. Es mi segundo proyecto
+            de programación y lo hice para aprender JavaScript moderno.
+          </p>
+          <p lang="en">
+            A web app for learning PID control by playing with it. A simulated
+            plant (like a motor's speed) is controlled by a PID you tune in real
+            time: sliders for Kp, Ki and Kd, presets, and a live chart with
+            performance metrics. It is my second programming project, built to
+            learn modern JavaScript.
+          </p>
+          <ul>
+            <li lang="es"><strong>Hecho con:</strong> JavaScript (módulos ES) y Vite, sin frameworks</li>
+            <li lang="en"><strong>Built with:</strong> JavaScript (ES modules) and Vite, no frameworks</li>
+            <li lang="es">
+              <strong>Incluye:</strong> simulación de una planta de primer orden
+              integrada con Euler, controlador PID con anti-windup, gráfica en
+              <code>&lt;canvas&gt;</code> nítida en pantallas HiDPI y con modo
+              oscuro, métricas calculadas al vuelo (sobrepaso, tiempo de subida,
+              tiempo de establecimiento ±2 % y error en estado estable), presets
+              de ajuste, respuesta al escalón y soporte de
+              <code>prefers-reduced-motion</code>.
+            </li>
+            <li lang="en">
+              <strong>Includes:</strong> a first-order plant simulation
+              integrated with Euler, a PID controller with anti-windup, a crisp
+              <code>&lt;canvas&gt;</code> chart with HiDPI support and dark mode,
+              metrics computed on the fly (overshoot, rise time, ±2 % settling
+              time, steady-state error), tuning presets, step response, and
+              <code>prefers-reduced-motion</code> support.
+            </li>
+            <li lang="es">
+              <strong>Qué aprendí:</strong> JavaScript moderno con módulos ES, el
+              bucle de animación con <code>requestAnimationFrame</code> y paso de
+              tiempo fijo, dibujo en <code>&lt;canvas&gt;</code>, y separar
+              simulación, control y presentación en módulos con funciones puras.
+            </li>
+            <li lang="en">
+              <strong>What I learned:</strong> modern JavaScript with ES modules,
+              the animation loop with <code>requestAnimationFrame</code> and a
+              fixed time step, drawing on <code>&lt;canvas&gt;</code>, and
+              splitting simulation, control, and presentation into modules with
+              pure functions.
+            </li>
+          </ul>
+          <p>
+            <a class="play-link" href="https://jaretjrd-source.github.io/playground-pid/" target="_blank" rel="noopener"><span lang="es">Abrir el playground</span><span lang="en">Open the playground</span></a>
+            · <a href="https://github.com/jaretjrd-source/playground-pid"><span lang="es">Código en GitHub</span><span lang="en">Code on GitHub</span></a>
+          </p>
+        </div>
+      </article>
+
+      <article>
         <img loading="lazy" src="assets/img/breakout.png" alt="Captura del juego Breakout: bloques de colores en la parte superior y el marcador de puntaje, nivel y vidas." width="1280" height="1000">
         <div class="project-body">
           <h3><span lang="es">Breakout — juego de arcade en Python</span><span lang="en">Breakout — arcade game in Python</span></h3>

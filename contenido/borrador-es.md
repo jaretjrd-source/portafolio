@@ -58,7 +58,26 @@ acondicionamiento de señales) en proyectos académicos
 
 ## Proyectos
 
-### 1. Breakout — juego de arcade en Python
+### 1. Playground de control PID — app web interactiva
+Aplicación web para entender el control PID jugando. Una planta simulada (como la
+velocidad de un motor) se controla con un PID que ajustas en tiempo real:
+deslizadores para Kp, Ki y Kd, presets, y una gráfica en vivo con las métricas de
+desempeño. Es mi segundo proyecto de programación, hecho para aprender JavaScript
+moderno.
+
+- **Hecho con:** JavaScript (módulos ES) y Vite, sin frameworks
+- **Incluye:** simulación de una planta de primer orden integrada con Euler,
+  controlador PID con anti-windup, gráfica en `<canvas>` nítida en pantallas
+  HiDPI y con modo oscuro, métricas al vuelo (sobrepaso, tiempo de subida,
+  establecimiento ±2 %, error en estado estable), presets de ajuste, respuesta al
+  escalón y soporte de `prefers-reduced-motion`.
+- **Qué aprendí:** JavaScript moderno con módulos ES, el bucle de animación con
+  `requestAnimationFrame` y paso de tiempo fijo, dibujo en `<canvas>`, y separar
+  simulación, control y presentación en módulos con funciones puras.
+- **Código:** https://github.com/jaretjrd-source/playground-pid
+- **Demo:** https://jaretjrd-source.github.io/playground-pid/
+
+### 2. Breakout — juego de arcade en Python
 Clon del clásico rompe-bloques, desarrollado desde cero de forma iterativa. Fue
 mi primer proyecto de programación completo: empecé con una ventana y una pelota
 que rebota, y lo fui creciendo hasta un juego con niveles, power-ups y puntajes.
@@ -75,7 +94,7 @@ que rebota, y lo fui creciendo hasta un juego con niveles, power-ups y puntajes.
 - **Código:** _(pendiente — subir a GitHub)_
 - **Demo:** _(pendiente — GIF o video corto)_
 
-### 2. Celda robótica — propuesta y simulación (proyecto de materia, Tec)
+### 3. Celda robótica — propuesta y simulación (proyecto de materia, Tec)
 Proyecto de una materia del Tecnológico de Monterrey, con ABB como socio formador.
 En equipo desarrollamos la **propuesta** de una celda robótica industrial y la
 validamos mediante **simulación** en RobotStudio: definición del layout, alcance
@@ -86,7 +105,7 @@ del robot y secuencia de operación.
 - **Mi rol:** desarrollo de la propuesta y de la simulación
 - *(Solo propuesta y simulación; no incluye implementación ni datos internos del socio.)*
 
-### 3. Gemelo digital de una línea de producción (proyecto de materia, Tec)
+### 4. Gemelo digital de una línea de producción (proyecto de materia, Tec)
 Proyecto de una materia del Tecnológico de Monterrey, con Carrier como socio
 formador. Construimos el **gemelo digital** de una línea de producción para
 modelar el estado actual y comparar propuestas de mejora sobre el flujo del
