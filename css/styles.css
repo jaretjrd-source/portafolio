@@ -461,6 +461,15 @@ dd {
   margin-bottom: 0;
 }
 
+/* Logotipo horizontal (ej. HSZG) en vez de escudo cuadrado: más ancho, menos alto. */
+.edu-item--wide {
+  grid-template-columns: 140px 1fr;
+}
+
+.edu-logo--wide {
+  width: 140px;
+}
+
 @media (max-width: 640px) {
   .edu-item {
     grid-template-columns: 48px 1fr;
@@ -468,6 +477,12 @@ dd {
   }
   .edu-logo {
     width: 48px;
+  }
+  .edu-item--wide {
+    grid-template-columns: 100px 1fr;
+  }
+  .edu-logo--wide {
+    width: 100px;
   }
 }
 
