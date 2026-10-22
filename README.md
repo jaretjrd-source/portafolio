@@ -5,7 +5,7 @@ Objetivo: tener una página publicada que muestre quién soy, mis proyectos (inc
 
 ## Decisiones del proyecto
 
-- **Idioma:** bilingüe español / inglés. Cada texto visible está dos veces en
+- **Idioma:** bilingüe español / inglés, **inglés por defecto**. Cada texto visible está dos veces en
   `index.html` (`lang="es"` y `lang="en"`); el CSS muestra solo el idioma de
   `<html lang>` y el botón "EN/ES" del header lo cambia (se guarda en el navegador).
 - **Sin diseño móvil:** decisión del proyecto — la Fase 3 se omite. La página
@@ -20,8 +20,11 @@ Objetivo: tener una página publicada que muestre quién soy, mis proyectos (inc
   en `juego/` y la tarjeta del proyecto enlaza a "▶ Jugar en el navegador".
 - **Práctica en Neoterra Lumina:** solo versión genérica (puesto, fechas, área).
   Sin métricas, arquitectura ni detalles internos, por confidencialidad del contrato.
-- **Datos personales:** el CV, contratos e identificaciones NO se suben al repo
+- **Datos personales:** contratos, constancias e identificaciones NO se suben al repo
   (bloqueados en `.gitignore`). Contacto público: solo correo, LinkedIn y GitHub.
+- **CV público:** `assets/CV_Jaret_Rubio.pdf` (versión en inglés, solo correo y LinkedIn;
+  sin teléfono ni dirección). Es la única excepción a `*.pdf` en `.gitignore`. Botón
+  "Download CV" en el inicio y enlace en Contacto. Para actualizarlo, reemplazar ese archivo.
 - **Logo del Tec de Monterrey:** se usa el logotipo en la sección de Educación
   solo para identificar dónde estudio (uso nominativo, como en un CV). Si el Tec
   lo pidiera, se quita sin problema.

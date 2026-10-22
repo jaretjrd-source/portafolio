@@ -29,8 +29,9 @@ function applyLang(lang) {
 }
 
 if (langToggle) {
-  // Estado inicial según lo que ya tenga <html> (lo puso el script del <head>)
-  applyLang(document.documentElement.lang === "en" ? "en" : "es");
+  // Estado inicial según lo que ya tenga <html> (lo puso el script del <head>).
+  // Predeterminado: inglés.
+  applyLang(document.documentElement.lang === "es" ? "es" : "en");
 
   langToggle.addEventListener("click", () => {
     const next = document.documentElement.lang === "es" ? "en" : "es";

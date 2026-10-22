@@ -116,7 +116,7 @@ state and compare improvement proposals on the process flow.
 ## Experience
 
 ### Industrial Networks Research Intern
-**Neoterra Lumina** · Hermosillo, Sonora, Mexico · May 2026 – September 2026
+**Neoterra Lumina** · Hermosillo, Sonora, Mexico · June 2026 – September 2026 (3 months)
 
 - Collected and organized data on the existing network infrastructure to support
   engineering decisions.
@@ -128,7 +128,7 @@ state and compare improvement proposals on the process flow.
 ## Education
 
 **Tecnológico de Monterrey** — Monterrey, Mexico
-B.S. in Mechatronics Engineering · Aug 2023 – Jun 2027 (expected)
+B.S. in Mechatronics Engineering · Aug 2023 – Jun 2028 (expected)
 GPA: 93.9 / 100 · Academic Merit Scholarship (40%)
 
 **DHIK program — Germany** · 2026–2027 cycle

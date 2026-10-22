@@ -301,12 +301,31 @@ section:last-child {
   text-decoration: none;
 }
 
+/* Botón secundario (Descargar CV): contorno, junto al principal */
+.btn--secundario {
+  margin-left: 0.5rem;
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.btn--secundario:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
 @media (prefers-color-scheme: dark) {
   .btn {
     color: #131316;
   }
   .btn:hover {
     color: #131316;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .btn--secundario {
+    color: var(--accent);
   }
 }
 

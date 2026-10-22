@@ -16,6 +16,8 @@ desktop.ini
 # Documentos personales / privados — NUNCA subir al repo público
 # (CV con datos personales, contratos, identificaciones, etc.)
 *.pdf
+# Excepción: el CV público (solo correo y LinkedIn, sin teléfono ni dirección)
+!assets/CV_Jaret_Rubio.pdf
 *.docx
 privado/
 cv/

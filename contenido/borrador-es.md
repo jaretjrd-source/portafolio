@@ -121,7 +121,7 @@ proceso.
 ## Experiencia
 
 ### Practicante en Investigación de Redes Industriales
-**Neoterra Lumina** · Hermosillo, Sonora, México · mayo 2026 – septiembre 2026
+**Neoterra Lumina** · Hermosillo, Sonora, México · junio 2026 – septiembre 2026 (3 meses)
 
 - Recolección y organización de datos sobre la infraestructura de red existente
   para apoyar decisiones de ingeniería.
@@ -134,7 +134,7 @@ proceso.
 ## Educación
 
 **Tecnológico de Monterrey** — Monterrey, México
-Ingeniería en Mecatrónica · agosto 2023 – junio 2027 (graduación esperada)
+Ingeniería en Mecatrónica · agosto 2023 – junio 2028 (graduación esperada)
 Promedio: 93.9 / 100 · Beca de Excelencia Académica (40 %)
 
 **Programa DHIK — Alemania** · ciclo 2026–2027
