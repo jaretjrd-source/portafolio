@@ -49,7 +49,7 @@ conditioning) in academic projects
 
 **Areas of interest:** industrial communication networks, full-stack web development
 
-**Languages:** Spanish (native), English (B2 — TOEFL ITP), German (A2 — Goethe A2)
+**Languages:** Spanish (native), English (C1 — TOEFL ITP), German (A2 — Goethe A2)
 
 ---
 

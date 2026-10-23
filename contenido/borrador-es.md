@@ -52,7 +52,7 @@ acondicionamiento de señales) en proyectos académicos
 
 **Áreas de interés:** redes de comunicación industrial, desarrollo web full-stack
 
-**Idiomas:** Español (nativo), Inglés (B2 — TOEFL ITP), Alemán (A2 — Goethe A2)
+**Idiomas:** Español (nativo), Inglés (C1 — TOEFL ITP), Alemán (A2 — Goethe A2)
 
 ---
 
