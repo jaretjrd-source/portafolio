@@ -427,6 +427,20 @@ dd {
   margin-bottom: 0;
 }
 
+/* Etiqueta de estado de un proyecto (p. ej. "En curso") */
+.estado-proyecto {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.1rem 0.6rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+  color: var(--accent);
+}
+
 .play-link::before {
   content: "\25B6"; /* triángulo de "play", decorativo */
   font-size: 0.7em;

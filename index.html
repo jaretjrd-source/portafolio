@@ -154,6 +154,101 @@
       <h2><span lang="es">Proyectos</span><span lang="en">Projects</span></h2>
 
       <article>
+        <div class="project-body">
+          <h3>
+            <span lang="es">Puesta en marcha de un robot delta igus con banda transportadora</span><span lang="en">Commissioning an igus delta robot with a conveyor belt</span>
+            <span class="estado-proyecto"><span lang="es">En curso</span><span lang="en">In progress</span></span>
+          </h3>
+          <p lang="es">
+            Proyecto de laboratorio en la Hochschule Zittau/Görlitz, como parte de
+            mis materias del programa de doble titulación. Estoy poniendo en marcha
+            una celda nueva de automatización de bajo costo: un robot delta igus
+            drylin DLE-DR (espacio de trabajo de 660 mm de diámetro, 3 ejes lineales
+            con motores paso a paso y encoder) montado sobre una banda
+            transportadora mk, con control igus Robot Control y un variador de
+            frecuencia SEW para la banda. El proyecto está en etapa de puesta en
+            marcha.
+          </p>
+          <p lang="en">
+            A lab project at Hochschule Zittau/Görlitz, part of my coursework in the
+            double-degree program. I am commissioning a new low-cost automation
+            cell: an igus drylin DLE-DR delta robot (660 mm diameter workspace,
+            3 linear axes with stepper motors and encoders) mounted on an mk
+            conveyor belt, with igus Robot Control and an SEW frequency inverter for
+            the belt. The project is in the commissioning stage.
+          </p>
+          <ul>
+            <li lang="es"><strong>Hecho con:</strong> igus Robot Control (iRC), bus CAN, Ethernet, variador SEW MOVITRAC LTE-B+</li>
+            <li lang="en"><strong>Built with:</strong> igus Robot Control (iRC), CAN bus, Ethernet, SEW MOVITRAC LTE-B+ inverter</li>
+            <li lang="es"><strong>Contexto:</strong> laboratorio de la Hochschule Zittau/Görlitz · octubre 2026 – actualidad</li>
+            <li lang="en"><strong>Context:</strong> Hochschule Zittau/Görlitz lab · October 2026 – present</li>
+            <li lang="es">
+              <strong>Qué he hecho:</strong> identifiqué y documenté los componentes
+              de la celda a partir de etiquetas, hojas de datos y planos; hice una
+              revisión de seguridad antes de energizar y reporté como pendiente la
+              falta de un paro de emergencia; configuré la comunicación Ethernet
+              entre el PC y el controlador y resolví una incompatibilidad de
+              versiones de software (iRC V15 en el PC vs. V14 en el robot); realicé
+              la primera puesta en marcha (habilitación de motores, movimiento por
+              eje, referenciado de los tres ejes y movimiento cartesiano);
+              diagnostiqué con los logs del controlador que un eje externo sin motor
+              bloqueaba el movimiento cartesiano y lo desactivé de forma reversible
+              y documentada; y validé la cinemática con mediciones físicas.
+            </li>
+            <li lang="en">
+              <strong>What I have done:</strong> identified and documented the cell's
+              components from labels, datasheets and drawings; ran a safety review
+              before powering up and reported the missing emergency stop as an open
+              item; set up Ethernet communication between the PC and the controller
+              and resolved a software version mismatch (iRC V15 on the PC vs. V14 on
+              the robot); carried out the first start-up (motor enable, jogging per
+              axis, homing of all three axes, and Cartesian motion); diagnosed from
+              the controller logs that an external axis with no motor connected was
+              blocking Cartesian motion, and disabled it in a reversible, documented
+              way; and validated the kinematics with physical measurements.
+            </li>
+            <li lang="es">
+              <strong>Ahora:</strong> el recorrido permitido por software es menor
+              que el recorrido mecánico disponible; estoy evaluando cómo ampliarlo
+              de forma segura.
+            </li>
+            <li lang="en">
+              <strong>Currently:</strong> the software travel limits are smaller
+              than the available mechanical travel; I am evaluating how to extend
+              them safely.
+            </li>
+            <li lang="es">
+              <strong>Próximos pasos:</strong> programa de pick &amp; place entre
+              varios puntos, integrar un gripper neumático de silicona (SoftGripping)
+              con salidas digitales y válvulas, integrar la banda (marcha/paro desde
+              el controlador del robot y velocidad desde el variador), definir
+              límites del espacio de trabajo y proponer la integración de un paro de
+              emergencia.
+            </li>
+            <li lang="en">
+              <strong>Next steps:</strong> a pick-and-place program across several
+              points, integrating a pneumatic silicone gripper (SoftGripping) via
+              digital outputs and valves, integrating the conveyor (start/stop from
+              the robot controller, speed from the inverter), defining workspace
+              limits, and proposing an emergency stop integration.
+            </li>
+          </ul>
+          <p lang="es"><em>
+            Contexto del proyecto: la celda se enmarca en RoSa-ReCycle, cuyo
+            objetivo es un demostrador de clasificación guiado por visión (cámara,
+            banda y robot delta). Antes ya había hecho un pick &amp; place con una
+            cámara Cognex y un robot xArm.
+          </em></p>
+          <p lang="en"><em>
+            Project context: the cell is part of RoSa-ReCycle, which aims at a
+            vision-guided sorting demonstrator (camera, conveyor and delta robot).
+            I had previously built a pick-and-place application with a Cognex camera
+            and an xArm robot.
+          </em></p>
+        </div>
+      </article>
+
+      <article>
         <img loading="lazy" src="assets/img/playground-pid.png" alt="Captura del Playground de control PID: la gráfica muestra la respuesta al escalón con sobrepaso y la línea del pico; debajo, las métricas (sobrepaso 23,1 %, tiempo de subida 0,45 s) y los deslizadores de Kp, Ki y Kd." width="1920" height="990">
         <div class="project-body">
           <h3><span lang="es">Playground de control PID — app web interactiva</span><span lang="en">PID control playground — interactive web app</span></h3>
@@ -321,6 +416,16 @@
             A one-year program: one semester of study at Hochschule Zittau/Görlitz
             (winter semester 2026/2027, classes starting 5 October 2026) followed by
             one semester of a professional internship in German industry.
+          </p>
+          <p lang="es">
+            <strong>Materias del semestre:</strong> Mechatronics Project Work,
+            Artificial Neural Networks, Microcontrollers, Image Processing e
+            Introduction to Cobots, además de un curso de alemán.
+          </p>
+          <p lang="en">
+            <strong>Courses this semester:</strong> Mechatronics Project Work,
+            Artificial Neural Networks, Microcontrollers, Image Processing and
+            Introduction to Cobots, plus a German language course.
           </p>
         </div>
       </article>
