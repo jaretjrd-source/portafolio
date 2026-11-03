@@ -557,17 +557,53 @@ footer p {
   color: var(--text-soft);
 }
 
-/* ---------- 12. Ajuste para pantallas pequeñas ----------
-   (el trabajo completo de responsive es la Fase 3) */
+/* ---------- 12. Teléfono (pantallas angostas) ---------- */
 
 @media (max-width: 600px) {
   :root {
     --space: 1.25rem;
   }
 
+  /* El header fijo debe ocupar poco: arriba nombre + botón de idioma,
+     abajo el menú en UNA línea que se desliza de lado si no cabe */
+  html {
+    scroll-padding-top: 6.5rem;
+  }
+
   .header-inner {
-    flex-direction: column;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.35rem 1rem;
+    padding-block: 0.6rem 0.45rem;
+  }
+
+  .lang-toggle {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  nav {
+    grid-column: 1 / -1;
+    margin-left: 0;
+    /* que el menú pueda deslizarse hasta el borde de la pantalla */
+    margin-inline: calc(var(--space) * -1);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  nav ul {
+    flex-wrap: nowrap;
+    gap: 1.1rem;
+    padding-inline: var(--space);
+  }
+
+  nav a {
+    white-space: nowrap;
+    font-size: 0.88rem;
   }
 
   main {
@@ -578,7 +614,39 @@ footer p {
     margin-bottom: 2.75rem;
   }
 
+  #inicio {
+    padding-block: 0.5rem 0.5rem;
+  }
+
+  #inicio p[lang] {
+    font-size: 1.05rem;
+  }
+
   #proyectos article {
     padding: 1.25rem;
+  }
+
+  /* Skills: título pegado a su contenido, y separación entre grupos */
+  dl {
+    gap: 0;
+  }
+
+  dt {
+    margin-bottom: 0.1rem;
+  }
+
+  dd {
+    margin-bottom: 1.1rem;
+  }
+
+  /* Educación: logo arriba y el texto a todo lo ancho */
+  .edu-item,
+  .edu-item--wide {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .edu-logo--wide {
+    width: 130px;
   }
 }

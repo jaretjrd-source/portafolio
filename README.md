@@ -8,9 +8,8 @@ Objetivo: tener una página publicada que muestre quién soy, mis proyectos (inc
 - **Idioma:** bilingüe español / inglés, **inglés por defecto**. Cada texto visible está dos veces en
   `index.html` (`lang="es"` y `lang="en"`); el CSS muestra solo el idioma de
   `<html lang>` y el botón "EN/ES" del header lo cambia (se guarda en el navegador).
-- **Sin diseño móvil:** decisión del proyecto — la Fase 3 se omite. La página
-  está pensada para pantalla de computadora. Solo se conservan ajustes mínimos
-  (meta viewport, imágenes fluidas, apilado básico) que ya venían de fases previas.
+- **Diseño móvil:** la página se adapta al teléfono (≤ 600 px): header compacto con el menú
+  en una línea deslizable, Educación con el logo arriba y Skills apiladas.
 - **Estilo visual:** "Minimal técnico" — tipografía Inter, fondo blanco, texto
   casi negro, acento gris azulado (`#3f5c74`). Modo oscuro automático según el
   sistema, sin botón. Ancho de página 920px; bloques de texto largos limitados
@@ -41,7 +40,7 @@ Objetivo: tener una página publicada que muestre quién soy, mis proyectos (inc
 - [x] Fase 0 — Preparación del entorno
 - [x] Fase 1 — Estructura y contenido (HTML)
 - [x] Fase 2 — Estilos y diseño (CSS)
-- [~] Fase 3 — Diseño responsive — **OMITIDA** (no se busca versión móvil)
+- [x] Fase 3 — Diseño responsive (versión para teléfono)
 - [x] Fase 4 — Interactividad (JavaScript)
 - [x] Fase 5 — Integrar el juego (demo jugable con pygbag)
 - [x] Fase 6 — Accesibilidad y pulido (Lighthouse 98 / 100 / 100 / 100)
@@ -135,7 +134,7 @@ Meta: que la página se vea cuidada y consistente en pantalla de computadora.
 
 ---
 
-## Fase 3 — Diseño responsive · OMITIDA
+## Fase 3 — Diseño responsive (teléfono)
 
 Decisión del proyecto: el portafolio es para pantalla de computadora; no se
 trabaja la versión móvil. Lo esencial que sí quedó y se conserva:
