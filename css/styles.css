@@ -329,14 +329,7 @@ section:last-child {
   }
 }
 
-/* ---------- 8. Sobre mí: texto + foto ---------- */
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 200px;
-  gap: 2rem;
-  align-items: start;
-}
+/* ---------- 8. Sobre mí ---------- */
 
 .about-text > p:last-child {
   margin-bottom: 0;
@@ -344,22 +337,6 @@ section:last-child {
 
 #sobre-mi > h3 {
   margin-top: 2.25rem;
-}
-
-.portrait {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-}
-
-@media (max-width: 640px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-  .portrait {
-    max-width: 220px;
-  }
 }
 
 /* ---------- 8b. Habilidades (lista de definición) ---------- */

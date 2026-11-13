@@ -90,7 +90,7 @@ Meta: todo el contenido escrito y ordenado en HTML semántico, **sin preocuparme
 - [x] Sección **Sobre mí** (`id="sobre-mi"`) con:
   - [x] 1 o 2 párrafos de presentación
   - [x] Lista de tecnologías/habilidades que estoy aprendiendo
-  - [x] (Opcional) una foto mía en `assets/img/` — `foto.jpg`, en "Sobre mí"
+  - [~] (Opcional) una foto mía en "Sobre mí" — se quitó del sitio (noviembre 2026)
 - [x] Sección **Proyectos** (`id="proyectos"`) con:
   - [x] Al menos **2 tarjetas** de proyecto (una es el juego)
   - [x] Cada tarjeta tiene: título, descripción corta, imagen/captura, enlace a demo y enlace a código
