@@ -1,7 +1,7 @@
 /* ===================================================
    Portafolio — Jaret Rubio Delgado
    Estilo: "Minimal técnico"
-   - Tipografía: Inter en todo (auto-alojada, ver más abajo)
+   - Tipografía: Space Grotesk en todo (auto-alojada, ver más abajo)
    - Fondo blanco, texto casi negro, un acento gris azulado
    - Modo oscuro automático según el sistema
    =================================================== */
@@ -9,11 +9,11 @@
 /* ---------- 0. Tipografía (auto-alojada, sin Google Fonts) ---------- */
 
 @font-face {
-  font-family: "Inter";
+  font-family: "Space Grotesk";
   font-style: normal;
-  font-weight: 100 900; /* fuente variable: un solo archivo cubre todos los pesos */
+  font-weight: 300 700; /* fuente variable: un solo archivo cubre todos los pesos */
   font-display: swap;
-  src: url("../assets/fonts/inter-latin.woff2") format("woff2");
+  src: url("../assets/fonts/space-grotesk-latin.woff2") format("woff2");
 }
 
 /* ---------- 1. Variables de color ---------- */
@@ -27,6 +27,12 @@
   --accent:    #3f5c74;
   --accent-strong: #2f4658;
   --border:    #e4e4e7;
+  --grid:      rgba(63, 92, 116, 0.07);   /* cuadrícula del fondo técnico */
+  --glow:      rgba(63, 92, 116, 0.14);   /* brillo suave detrás del inicio */
+  --sombra:    0 1px 2px rgba(24, 24, 27, 0.04), 0 10px 28px -14px rgba(24, 24, 27, 0.18);
+  --plano:        #0e1c29;                    /* azul marino de las franjas tipo plano */
+  --plano-linea:  rgba(169, 199, 221, 0.08);  /* cuadrícula sobre el azul */
+  --plano-texto:  #b9cad7;
 
   --maxw: 920px;
   --space: 2rem;
@@ -43,6 +49,10 @@
     --accent:    #8fb0c7;
     --accent-strong: #a9c4d6;
     --border:    #2a2a30;
+    --grid:      rgba(143, 176, 199, 0.06);
+    --glow:      rgba(143, 176, 199, 0.12);
+    --sombra:    0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 30px -16px rgba(0, 0, 0, 0.7);
+    --plano:     #0b1621;
   }
 }
 
@@ -94,7 +104,7 @@ img {
 /* ---------- 3. Base ---------- */
 
 body {
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family: "Space Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.75;
@@ -114,8 +124,8 @@ footer {
    Se muestra solo el elemento cuyo lang coincide con <html lang>.
    :not(:root) protege al propio <html> de quedar oculto. */
 
-:root[lang="es"] [lang="en"]:not(:root),
-:root[lang="en"] [lang="es"]:not(:root) {
+:root[lang="de"] [lang="en"]:not(:root),
+:root[lang="en"] [lang="de"]:not(:root) {
   display: none !important;
 }
 
@@ -263,14 +273,234 @@ section:last-child {
   margin-bottom: 0;
 }
 
+/* ---------- 6b. Inicio con fondo técnico ----------
+   ::before = cuadrícula tipo plano + brillo, a todo lo ancho de la pantalla
+   ::after  = dibujo técnico (engranes, brazo, cotas) tenue y un poco borroso */
+
+body {
+  overflow-x: clip; /* el fondo del inicio sale del contenedor sin crear scroll lateral */
+}
+
 #inicio {
-  padding-block: 2rem 1.5rem;
+  position: relative;
+  isolation: isolate;
+  padding-block: 3.5rem 4rem;
+}
+
+#inicio::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: -4.5rem;               /* cubre también el espacio de arriba de <main> */
+  bottom: -1rem;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  background:
+    radial-gradient(ellipse 55% 75% at 78% 40%, var(--glow), transparent 70%),
+    linear-gradient(var(--grid) 1px, transparent 1px) 0 0 / 28px 28px,
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px) 0 0 / 28px 28px;
+  -webkit-mask-image: linear-gradient(to bottom, #000 65%, transparent);
+          mask-image: linear-gradient(to bottom, #000 65%, transparent);
+}
+
+#inicio::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -2.5rem;
+  right: -11rem;
+  width: 660px;
+  height: 470px;
+  background: url("../assets/img/fondo-tecnico.svg") center / contain no-repeat;
+  opacity: 0.5;
+  filter: blur(0.7px);
+  -webkit-mask-image: radial-gradient(closest-side, #000 55%, transparent);
+          mask-image: radial-gradient(closest-side, #000 55%, transparent);
+  pointer-events: none;
+}
+
+.eyebrow {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.9rem;
+}
+
+#inicio h1 {
+  font-size: clamp(2.4rem, 6.5vw, 3.6rem);
+  letter-spacing: -0.025em;
+  line-height: 1.08;
 }
 
 #inicio p[lang] {
   font-size: 1.15rem;
   max-width: 42ch;
-  margin-top: 1rem;
+  margin-top: 1.1rem;
+}
+
+.hero-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.25rem 0 1.5rem;
+  max-width: 34rem;
+}
+
+.hero-tags li {
+  padding: 0.2rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: var(--text-soft);
+  background: color-mix(in srgb, var(--bg) 75%, transparent);
+  backdrop-filter: blur(2px);
+}
+
+.hero-botones {
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+/* Dentro de la fila de botones la separación la da el gap */
+.hero-botones .btn {
+  margin: 0;
+}
+
+/* ---------- 6c. Encabezado de cada sección: franja tipo plano de ingeniería ----------
+   Cada sección abre con .seccion-cabeza: franja azul marino de lado a lado con
+   cuadrícula, un brillo suave y el dibujo técnico de la sección a la derecha
+   (assets/img/banda-*.svg: íconos rellenos tipo ícono de app). Encima: "Section 01" / "Abschnitt 01", el título y un subtítulo. */
+
+main {
+  counter-reset: seccion proyecto;
+  padding-bottom: 0;
+}
+
+main > section:not(#inicio) {
+  position: relative;
+  isolation: isolate;
+  margin-bottom: 0;
+  padding-bottom: 4.5rem;
+}
+
+/* Fondo del cuerpo de la sección: las alternas llevan un tinte muy leve */
+main > section:not(#inicio)::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  background: var(--fondo-seccion, transparent);
+}
+
+#proyectos,
+#educacion {
+  --fondo-seccion: color-mix(in srgb, var(--accent) 5%, var(--bg));
+}
+
+.seccion-cabeza {
+  /* velo oscuro a la izquierda para que el título se lea sobre el dibujo */
+  --velo: linear-gradient(90deg,
+    var(--plano) 0%,
+    var(--plano) 26%,
+    color-mix(in srgb, var(--plano) 55%, transparent) 44%,
+    transparent 58%);
+  position: relative;
+  isolation: isolate;
+  min-height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 3.5rem 0 2.25rem;
+  margin-bottom: 3rem;
+}
+
+.seccion-cabeza::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  background:
+    var(--velo),
+    var(--banda) right max(0px, calc(50vw - 40rem)) center / auto 100% no-repeat,
+    radial-gradient(ellipse 45% 110% at 82% 50%, rgba(120, 170, 210, 0.16), transparent 70%),
+    linear-gradient(var(--plano-linea) 1px, transparent 1px) 0 0 / 24px 24px,
+    linear-gradient(90deg, var(--plano-linea) 1px, transparent 1px) 0 0 / 24px 24px,
+    var(--plano);
+  border-block: 1px solid rgba(169, 199, 221, 0.22);
+}
+
+#sobre-mi    { --banda: url("../assets/img/banda-sobre-mi.svg"); }
+#proyectos   { --banda: url("../assets/img/banda-proyectos.svg"); }
+#experiencia { --banda: url("../assets/img/banda-experiencia.svg"); }
+#educacion   { --banda: url("../assets/img/banda-educacion.svg"); }
+#contacto    { --banda: url("../assets/img/banda-contacto.svg"); }
+
+/* En alemán, las etiquetas de los íconos van en alemán */
+:root[lang="de"] #sobre-mi    { --banda: url("../assets/img/banda-sobre-mi-de.svg"); }
+:root[lang="de"] #proyectos   { --banda: url("../assets/img/banda-proyectos-de.svg"); }
+:root[lang="de"] #experiencia { --banda: url("../assets/img/banda-experiencia-de.svg"); }
+:root[lang="de"] #educacion   { --banda: url("../assets/img/banda-educacion-de.svg"); }
+:root[lang="de"] #contacto    { --banda: url("../assets/img/banda-contacto-de.svg"); }
+
+.seccion-cabeza h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: clamp(1.7rem, 4vw, 2.3rem);
+  letter-spacing: -0.02em;
+  color: #f3f6f9;
+}
+
+/* "Section 01" / "Abschnitt 01" encima del título */
+.seccion-cabeza h2::before {
+  counter-increment: seccion;
+  display: block;
+  margin-bottom: 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8fb6d3;
+}
+
+:root[lang="de"] .seccion-cabeza h2::before {
+  content: "Abschnitt " counter(seccion, decimal-leading-zero);
+}
+
+:root[lang="en"] .seccion-cabeza h2::before {
+  content: "Section " counter(seccion, decimal-leading-zero);
+}
+
+/* Barrita de acento debajo del título */
+.seccion-cabeza h2::after {
+  content: "";
+  display: block;
+  width: 3.5rem;
+  height: 3px;
+  margin-top: 0.9rem;
+  border-radius: 2px;
+  background: #6fa8d0;
+}
+
+.seccion-sub {
+  margin: 0.85rem 0 0;
+  max-width: 46ch;
+  font-size: 1.02rem;
+  color: var(--plano-texto);
 }
 
 /* Bloques largos de texto: mantener un ancho de lectura cómodo
@@ -329,10 +559,82 @@ section:last-child {
   }
 }
 
-/* ---------- 8. Sobre mí ---------- */
+/* ---------- 8. Sobre mí: texto a la izquierda, datos rápidos a la derecha ---------- */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 17.5rem;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* En la columna el texto ya tiene un ancho cómodo: que la llene completa */
+.about-grid .about-text > p {
+  max-width: none;
+}
 
 .about-text > p:last-child {
   margin-bottom: 0;
+}
+
+.ficha {
+  padding: 1.4rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--sombra);
+}
+
+.ficha__titulo {
+  margin-bottom: 0.9rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* Lista de datos: cada dato con su etiqueta arriba y una línea entre datos */
+.ficha .ficha__datos {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  max-width: none;
+}
+
+.ficha__datos > div {
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.ficha__datos > div:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.ficha__datos > div:last-child {
+  padding-bottom: 0;
+}
+
+.ficha .ficha__datos dt {
+  margin-bottom: 0.15rem;
+  padding-top: 0;
+  font-size: 0.68rem;
+}
+
+.ficha .ficha__datos dd {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 760px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
 
 #sobre-mi > h3 {
@@ -343,10 +645,9 @@ section:last-child {
 
 dl {
   display: grid;
-  grid-template-columns: 170px 1fr;
+  grid-template-columns: 200px 1fr;
   gap: 1.1rem 2rem;
   margin-top: 1.25rem;
-  max-width: var(--readw);
 }
 
 dt {
@@ -378,10 +679,28 @@ dd {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.75rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.25rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  box-shadow: var(--sombra);
+  border-top: 3px solid var(--accent);
+  counter-increment: proyecto;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+#proyectos article:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
+  border-top-color: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #proyectos article,
+  #proyectos article:hover {
+    transition: none;
+    transform: none;
+  }
 }
 
 #proyectos article:last-child {
@@ -402,6 +721,43 @@ dd {
 
 .project-body > *:last-child {
   margin-bottom: 0;
+}
+
+/* "Project 01" / "Projekt 01" encima del título de cada tarjeta */
+#proyectos .project-body::before {
+  display: block;
+  margin-bottom: 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+:root[lang="de"] #proyectos .project-body::before {
+  content: "Projekt " counter(proyecto, decimal-leading-zero);
+}
+
+:root[lang="en"] #proyectos .project-body::before {
+  content: "Project " counter(proyecto, decimal-leading-zero);
+}
+
+#proyectos .project-body h3 {
+  font-size: 1.2rem;
+}
+
+/* Esquema ilustrado (proyecto sin foto): sobre el mismo azul plano */
+#proyectos img.project-blueprint {
+  height: 340px;
+  max-height: none;
+  padding: 1.25rem;
+  object-fit: contain;
+  object-position: center;
+  border-color: rgba(169, 199, 221, 0.25);
+  background:
+    linear-gradient(var(--plano-linea) 1px, transparent 1px) 0 0 / 24px 24px,
+    linear-gradient(90deg, var(--plano-linea) 1px, transparent 1px) 0 0 / 24px 24px,
+    var(--plano);
 }
 
 /* Etiqueta de estado de un proyecto (p. ej. "En curso") */
@@ -448,7 +804,17 @@ dd {
 
 #experiencia article,
 #educacion article {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--sombra);
+}
+
+#experiencia article {
+  margin-bottom: 0;
+  padding: 1.75rem 2rem;
+  border-left: 3px solid var(--accent);
 }
 
 .edu-item {
@@ -456,6 +822,7 @@ dd {
   grid-template-columns: 64px 1fr;
   gap: 1.25rem;
   align-items: start;
+  padding: 1.5rem 1.75rem;
 }
 
 .edu-logo {
@@ -511,27 +878,105 @@ section ul {
   list-style: disc;
 }
 
+/* Certificaciones: mosaico de recuadros */
+#educacion > h3 {
+  margin-top: 2.5rem;
+}
+
+#educacion > ul {
+  list-style: none;
+  margin: 0.9rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: 0.75rem;
+}
+
+#educacion > ul > li {
+  position: relative;
+  margin: 0;
+  padding: 0.85rem 1rem 0.85rem 2.4rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+#educacion > ul > li::before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 1.25rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 1px;
+  background: var(--accent);
+  transform: rotate(45deg);
+}
+
+/* Contacto: un recuadro por medio */
 #contacto ul {
   list-style: none;
-  margin-left: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
 }
 
 #contacto li {
-  margin-bottom: 0.4rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.15rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--sombra);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+}
+
+#contacto li a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  overflow-wrap: break-word;
 }
 
 /* ---------- 11. Footer ---------- */
 
 footer {
-  border-top: 1px solid var(--border);
-  padding-block: 1.5rem 2.5rem;
-  margin-top: 4rem;
+  position: relative;
+  isolation: isolate;
+  padding-block: 2.25rem;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  background:
+    linear-gradient(var(--plano-linea) 1px, transparent 1px) 0 0 / 24px 24px,
+    linear-gradient(90deg, var(--plano-linea) 1px, transparent 1px) 0 0 / 24px 24px,
+    var(--plano);
 }
 
 footer p {
   margin: 0;
   font-size: 0.85rem;
-  color: var(--text-soft);
+  color: var(--plano-texto);
 }
 
 /* ---------- 12. Teléfono (pantallas angostas) ---------- */
@@ -574,13 +1019,13 @@ footer p {
 
   nav ul {
     flex-wrap: nowrap;
-    gap: 1.1rem;
+    gap: 0.85rem;
     padding-inline: var(--space);
   }
 
   nav a {
     white-space: nowrap;
-    font-size: 0.88rem;
+    font-size: 0.82rem;
   }
 
   main {
@@ -592,7 +1037,23 @@ footer p {
   }
 
   #inicio {
-    padding-block: 0.5rem 0.5rem;
+    padding-block: 1.75rem 2.25rem;
+  }
+
+  #inicio::before {
+    top: -2.5rem;
+  }
+
+  #inicio::after {
+    top: 0.5rem;
+    right: -14rem;
+    width: 420px;
+    height: 300px;
+    opacity: 0.3;
+  }
+
+  .eyebrow {
+    font-size: 0.7rem;
   }
 
   #inicio p[lang] {
@@ -625,5 +1086,44 @@ footer p {
 
   .edu-logo--wide {
     width: 130px;
+  }
+}
+
+/* Teléfono: franjas de sección más bajas, velo más oscuro y tarjetas compactas */
+@media (max-width: 600px) {
+  main > section:not(#inicio) {
+    padding-bottom: 2.75rem;
+  }
+
+  .seccion-cabeza {
+    --velo: linear-gradient(90deg,
+      var(--plano) 0%,
+      color-mix(in srgb, var(--plano) 92%, transparent) 60%,
+      color-mix(in srgb, var(--plano) 70%, transparent) 100%);
+    min-height: 11rem;
+    padding: 2.25rem 0 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .seccion-sub {
+    font-size: 0.92rem;
+  }
+
+  #proyectos article {
+    margin-bottom: 1.5rem;
+  }
+
+  #proyectos img.project-blueprint {
+    height: 220px;
+    padding: 0.75rem;
+  }
+
+  #experiencia article,
+  .edu-item {
+    padding: 1.25rem;
+  }
+
+  #contacto ul {
+    grid-template-columns: 1fr;
   }
 }

@@ -5,12 +5,25 @@ Objetivo: tener una página publicada que muestre quién soy, mis proyectos (inc
 
 ## Decisiones del proyecto
 
-- **Idioma:** bilingüe español / inglés, **inglés por defecto**. Cada texto visible está dos veces en
-  `index.html` (`lang="es"` y `lang="en"`); el CSS muestra solo el idioma de
-  `<html lang>` y el botón "EN/ES" del header lo cambia (se guarda en el navegador).
+- **Idioma:** bilingüe **inglés / alemán**, **inglés por defecto** (el español se quitó en
+  noviembre 2026: el sitio está pensado para buscar prácticas en Alemania). Cada texto visible
+  está dos veces en `index.html` (`lang="en"` y `lang="de"`); el CSS muestra solo el idioma de
+  `<html lang>` y el botón "DE/EN" del header lo cambia (se guarda en el navegador).
+  Los borradores de `contenido/` son históricos (español / inglés).
+- **Inicio con fondo técnico:** cuadrícula tipo plano + brillo suave + dibujo técnico propio
+  (`assets/img/fondo-tecnico.svg`: engranes, brazo robótico, cotas, circuito), tenue y borroso.
+  Secciones numeradas (01, 02…) y tarjetas de proyecto con sombra suave.
+- **Encabezados de sección:** cada sección abre con una franja azul marino de lado a lado
+  (cuadrícula + íconos rellenos tipo ícono de app de los temas/dispositivos de la sección, con
+  etiqueta), con "Section / Abschnitt 0X", título y subtítulo. Íconos en
+  `assets/img/banda-*.svg` (inglés) y `banda-*-de.svg` (alemán).
+- **Tarjetas:** proyectos numerados ("Proyecto 01…") con línea de acento; el proyecto del robot
+  delta usa un esquema ilustrado (`assets/img/ilustracion-delta.svg`, marcado como esquema, no foto).
+  Experiencia y educación en tarjetas, certificaciones en mosaico, contacto en recuadros y pie de
+  página en el mismo azul.
 - **Diseño móvil:** la página se adapta al teléfono (≤ 600 px): header compacto con el menú
   en una línea deslizable, Educación con el logo arriba y Skills apiladas.
-- **Estilo visual:** "Minimal técnico" — tipografía Inter, fondo blanco, texto
+- **Estilo visual:** "Minimal técnico" — tipografía Space Grotesk (antes Inter), fondo blanco, texto
   casi negro, acento gris azulado (`#3f5c74`). Modo oscuro automático según el
   sistema, sin botón. Ancho de página 920px; bloques de texto largos limitados
   a ~60 caracteres para lectura cómoda.
@@ -205,7 +218,7 @@ Meta: calidad final antes de publicar.
 - [x] `prefers-reduced-motion`: se desactiva el scroll suave.
 - [x] Imágenes comprimidas (~440 KB en total, todas ≤ 1280 px).
 - [x] Eliminado código muerto (`placeholder.svg`, selector CSS sin uso).
-- [x] Fuente Inter auto-alojada (`assets/fonts/inter-latin.woff2`) para quitar el
+- [x] Fuente auto-alojada (hoy `assets/fonts/space-grotesk-latin.woff2`; antes Inter) para quitar el
   render-blocking de Google Fonts.
 - [x] **Lighthouse** en el sitio publicado:
   - [x] Performance 98
@@ -242,7 +255,7 @@ Ideas para seguir practicando una vez publicado:
 - [ ] Añadir una sección de blog o notas.
 - [ ] Animaciones sutiles al hacer scroll (IntersectionObserver + CSS transitions).
 - [ ] Página de detalle por proyecto.
-- [ ] Traducción español/inglés.
+- [x] Traducción: inglés / alemán.
 - [ ] Formulario de contacto funcional con un servicio (Formspree, EmailJS).
 - [ ] Migrar el proyecto a **Astro** o **React** como siguiente reto de aprendizaje.
 - [ ] Configurar un pipeline de CI que valide el HTML en cada push.

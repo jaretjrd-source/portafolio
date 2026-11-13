@@ -4,50 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio of Jaret Rubio Delgado, Mechatronics Engineering student: industrial automation, systems simulation, communication networks and web development.">
-  <title>Jaret Rubio Delgado — Portafolio</title>
+  <title>Jaret Rubio Delgado — Portfolio</title>
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <meta name="theme-color" content="#3f5c74">
 
   <!-- Vista previa al compartir el enlace (Open Graph / Twitter) -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Jaret Rubio Delgado — Portafolio">
+  <meta property="og:title" content="Jaret Rubio Delgado — Portfolio">
   <meta property="og:description" content="Mechatronics Engineering student: industrial automation, communication networks and full-stack web development.">
   <meta property="og:url" content="https://jaretjrd-source.github.io/portafolio/">
   <meta property="og:image" content="https://jaretjrd-source.github.io/portafolio/assets/img/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Aplica el idioma guardado antes de pintar la página (evita el parpadeo) -->
-  <script>try{var l=localStorage.getItem('lang');if(l==='en'||l==='es')document.documentElement.lang=l;}catch(e){}</script>
+  <script>try{var l=localStorage.getItem('lang');if(l==='en'||l==='de')document.documentElement.lang=l;}catch(e){}</script>
 
-  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/main.js" defer></script>
 </head>
 <body>
 
   <!--
-    BILINGÜE: cada texto visible se escribe dos veces, una con lang="es" y
-    otra con lang="en". El CSS muestra solo el idioma activo según <html lang>.
-    El botón "EN/ES" del header cambia <html lang> y lo guarda en el navegador.
-    Los textos que son 100 % nombres propios (p. ej. "TOEFL ITP") no se duplican.
+    BILINGÜE (inglés / alemán): cada texto visible se escribe dos veces, una con
+    lang="en" y otra con lang="de". El CSS muestra solo el idioma activo según
+    <html lang>. El botón "DE/EN" del header cambia <html lang> y lo guarda en el
+    navegador. Los textos que son 100 % nombres propios (p. ej. "TOEFL ITP") no se duplican.
   -->
 
-  <a href="#inicio" class="skip-link"><span lang="es">Saltar al contenido</span><span lang="en">Skip to content</span></a>
+  <a href="#inicio" class="skip-link"><span lang="en">Skip to content</span><span lang="de">Zum Inhalt springen</span></a>
 
   <header>
     <div class="header-inner">
       <a href="#inicio" class="logo">Jaret Rubio Delgado</a>
-      <nav aria-label="Navegación / Navigation">
+      <nav aria-label="Navigation">
         <ul>
-          <li><a href="#sobre-mi"><span lang="es">Sobre mí</span><span lang="en">About</span></a></li>
-          <li><a href="#proyectos"><span lang="es">Proyectos</span><span lang="en">Projects</span></a></li>
-          <li><a href="#experiencia"><span lang="es">Experiencia</span><span lang="en">Experience</span></a></li>
-          <li><a href="#educacion"><span lang="es">Educación</span><span lang="en">Education</span></a></li>
-          <li><a href="#contacto"><span lang="es">Contacto</span><span lang="en">Contact</span></a></li>
+          <li><a href="#sobre-mi"><span lang="en">About</span><span lang="de">Über mich</span></a></li>
+          <li><a href="#proyectos"><span lang="en">Projects</span><span lang="de">Projekte</span></a></li>
+          <li><a href="#experiencia"><span lang="en">Experience</span><span lang="de">Erfahrung</span></a></li>
+          <li><a href="#educacion"><span lang="en">Education</span><span lang="de">Ausbildung</span></a></li>
+          <li><a href="#contacto"><span lang="en">Contact</span><span lang="de">Kontakt</span></a></li>
         </ul>
       </nav>
-      <button id="lang-toggle" type="button" class="lang-toggle">EN</button>
+      <button id="lang-toggle" type="button" class="lang-toggle">DE</button>
     </div>
   </header>
 
@@ -55,36 +55,44 @@
 
     <!-- ============ INICIO / HERO ============ -->
     <section id="inicio">
-      <h1>Jaret Rubio Delgado</h1>
-      <p lang="es">
-        Estudiante de Ingeniería en Mecatrónica enfocado en automatización
-        industrial, redes de comunicación y simulación de sistemas — ahora
-        ampliando hacia el desarrollo web full-stack.
+      <p class="eyebrow">
+        <span lang="en">Mechatronics Engineering · Tec de Monterrey × Hochschule Zittau/Görlitz</span>
+        <span lang="de">Mechatronik · Tec de Monterrey × Hochschule Zittau/Görlitz</span>
       </p>
+      <h1>Jaret Rubio Delgado</h1>
       <p lang="en">
         Mechatronics Engineering student focused on industrial automation,
         communication networks, and systems simulation — now expanding into
         full-stack web development.
       </p>
-      <p>
-        <a href="#proyectos" class="btn"><span lang="es">Ver proyectos</span><span lang="en">View projects</span></a>
-        <a href="assets/CV_Jaret_Rubio.pdf" class="btn btn--secundario" download><span lang="es">Descargar CV (inglés, PDF)</span><span lang="en">Download CV (PDF)</span></a>
+      <p lang="de">
+        Mechatronik-Student mit Schwerpunkt auf industrieller Automatisierung,
+        Kommunikationsnetzen und Systemsimulation — derzeit erweitere ich mein
+        Profil um Full-Stack-Webentwicklung.
+      </p>
+      <ul class="hero-tags" aria-label="Areas / Bereiche">
+        <li><span lang="en">Industrial automation</span><span lang="de">Industrielle Automatisierung</span></li>
+        <li><span lang="en">Robotics</span><span lang="de">Robotik</span></li>
+        <li><span lang="en">Industrial networks</span><span lang="de">Industrielle Netzwerke</span></li>
+        <li><span lang="en">Digital twins</span><span lang="de">Digitale Zwillinge</span></li>
+        <li><span lang="en">Control &amp; simulation</span><span lang="de">Regelung &amp; Simulation</span></li>
+        <li><span lang="en">Web development</span><span lang="de">Webentwicklung</span></li>
+      </ul>
+      <p class="hero-botones">
+        <a href="#proyectos" class="btn"><span lang="en">View projects</span><span lang="de">Projekte ansehen</span></a>
+        <a href="assets/CV_Jaret_Rubio.pdf" class="btn btn--secundario" download><span lang="en">Download CV (PDF)</span><span lang="de">Lebenslauf herunterladen (Englisch, PDF)</span></a>
       </p>
     </section>
 
     <!-- ============ SOBRE MÍ ============ -->
     <section id="sobre-mi">
-      <h2><span lang="es">Sobre mí</span><span lang="en">About me</span></h2>
+      <div class="seccion-cabeza">
+        <h2><span lang="en">About me</span><span lang="de">Über mich</span></h2>
+        <p class="seccion-sub"><span lang="en">Engineering where hardware meets software</span><span lang="de">Ingenieurwesen an der Schnittstelle von Hardware und Software</span></p>
+      </div>
 
+      <div class="about-grid">
       <div class="about-text">
-          <p lang="es">
-            Soy Jaret Rubio Delgado, estudiante de Ingeniería en Mecatrónica en el
-            Tecnológico de Monterrey (campus Monterrey). Durante el ciclo 2026–2027
-            participo en el programa de doble titulación DHIK en Ingeniería
-            Eléctrica: un semestre de estudios en la Hochschule Zittau/Görlitz
-            seguido de un semestre de prácticas profesionales en la industria
-            alemana.
-          </p>
           <p lang="en">
             I'm Jaret Rubio Delgado, a Mechatronics Engineering student at
             Tecnológico de Monterrey (Monterrey campus). During the 2026–2027 cycle
@@ -92,13 +100,12 @@
             program: one semester of study at Hochschule Zittau/Görlitz followed by
             one semester of a professional internship in German industry.
           </p>
-          <p lang="es">
-            Me interesa el punto donde se encuentran el hardware y el software:
-            automatización industrial, robótica, simulación de procesos (gemelos
-            digitales) y redes de comunicación industrial. Recientemente empecé
-            también a desarrollar aplicaciones web, con el objetivo de construir mis
-            propias herramientas y plataformas de principio a fin (frontend y
-            backend).
+          <p lang="de">
+            Ich bin Jaret Rubio Delgado und studiere Mechatronik am Tecnológico de
+            Monterrey (Campus Monterrey). Im Studienjahr 2026–2027 nehme ich am
+            DHIK-Doppelabschlussprogramm in Elektrotechnik teil: ein Studiensemester
+            an der Hochschule Zittau/Görlitz, gefolgt von einem Praxissemester in
+            der deutschen Industrie.
           </p>
           <p lang="en">
             I'm drawn to where hardware meets software: industrial automation,
@@ -107,111 +114,162 @@
             applications, aiming to develop my own tools and platforms end to end
             (frontend and backend).
           </p>
-          <p lang="es">
-            Busco unas prácticas donde pueda combinar la ingeniería de sistemas con
-            el desarrollo de software.
+          <p lang="de">
+            Mich interessiert die Schnittstelle zwischen Hardware und Software:
+            industrielle Automatisierung, Robotik, Prozesssimulation (digitale
+            Zwillinge) und industrielle Kommunikationsnetze. Seit Kurzem entwickle
+            ich auch Webanwendungen, um eigene Werkzeuge und Plattformen von Anfang
+            bis Ende umzusetzen (Frontend und Backend).
           </p>
           <p lang="en">
-            I'm looking for an internship where I can combine systems engineering
-            with software development.
+            From March 2027 I'm looking for my six-month mandatory internship in
+            Germany. I'm open to a wide range of fields — such as robotics and
+            automation, smart factory and data, control and simulation, or
+            electronics and testing — and eager to learn and contribute wherever I
+            can add value.
+          </p>
+          <p lang="de">
+            Ab März 2027 suche ich mein sechsmonatiges Pflichtpraktikum in
+            Deutschland. Ich bin offen für ein breites Spektrum an Bereichen — etwa
+            Robotik und Automatisierung, Smart Factory und Daten, Regelung und
+            Simulation oder Elektronik und Test — und möchte dort lernen und
+            mitarbeiten, wo ich einen Beitrag leisten kann.
           </p>
       </div>
 
-      <h3><span lang="es">Habilidades</span><span lang="en">Skills</span></h3>
+        <!-- Datos rápidos (a la derecha del texto) -->
+        <aside class="ficha" aria-label="At a glance / Auf einen Blick">
+          <p class="ficha__titulo"><span lang="en">At a glance</span><span lang="de">Auf einen Blick</span></p>
+          <dl class="ficha__datos">
+            <div>
+              <dt><span lang="en">Studies</span><span lang="de">Studium</span></dt>
+              <dd><span lang="en">B.S. Mechatronics Engineering, Tec de Monterrey · expected 2028</span><span lang="de">Bachelor Mechatronik, Tec de Monterrey · voraussichtlich 2028</span></dd>
+            </div>
+            <div>
+              <dt><span lang="en">Currently</span><span lang="de">Aktuell</span></dt>
+              <dd><span lang="en">DHIK double degree at Hochschule Zittau/Görlitz</span><span lang="de">DHIK-Doppelabschluss an der Hochschule Zittau/Görlitz</span></dd>
+            </div>
+            <div>
+              <dt><span lang="en">Internship</span><span lang="de">Praktikum</span></dt>
+              <dd><span lang="en">6 months · from March 2027</span><span lang="de">6 Monate · ab März 2027</span></dd>
+            </div>
+            <div>
+              <dt><span lang="en">Languages</span><span lang="de">Sprachen</span></dt>
+              <dd><span lang="en">Spanish · English B2 · German A2</span><span lang="de">Spanisch · Englisch B2 · Deutsch A2</span></dd>
+            </div>
+            <div>
+              <dt><span lang="en">Location</span><span lang="de">Standort</span></dt>
+              <dd><span lang="en">Zittau, Germany</span><span lang="de">Zittau, Deutschland</span></dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+
+      <h3><span lang="en">Skills</span><span lang="de">Kenntnisse</span></h3>
       <dl>
-        <dt><span lang="es">Programación</span><span lang="en">Programming</span></dt>
+        <dt><span lang="en">Programming</span><span lang="de">Programmierung</span></dt>
         <dd>Python, C/C++, MATLAB</dd>
 
-        <dt><span lang="es">Desarrollo web (proyecto propio)</span><span lang="en">Web Development (self-directed project)</span></dt>
+        <dt><span lang="en">Web Development (self-directed project)</span><span lang="de">Webentwicklung (eigenes Projekt)</span></dt>
         <dd>TypeScript, Angular, NestJS, PostgreSQL</dd>
 
-        <dt><span lang="es">Industrial / Automatización</span><span lang="en">Industrial / Automation</span></dt>
+        <dt><span lang="en">Industrial / Automation</span><span lang="de">Industrie / Automatisierung</span></dt>
         <dd>PLC (Schneider Electric, SIEMENS), Ladder Logic, Universal Robots (UR)</dd>
 
-        <dt><span lang="es">Simulación y CAD</span><span lang="en">Simulation &amp; CAD</span></dt>
+        <dt><span lang="en">Simulation &amp; CAD</span><span lang="de">Simulation &amp; CAD</span></dt>
         <dd>SolidWorks, MATLAB/Simulink, RobotStudio (ABB), Tecnomatix Plant Simulation, Process Simulate (Siemens)</dd>
 
-        <dt><span lang="es">Microcontroladores</span><span lang="en">Microcontrollers</span></dt>
-        <dd lang="es">Experiencia básica con STM32 (adquisición de datos y acondicionamiento de señales) en proyectos académicos</dd>
+        <dt><span lang="en">Microcontrollers</span><span lang="de">Mikrocontroller</span></dt>
         <dd lang="en">Basic experience with STM32 (data acquisition and signal conditioning) in academic projects</dd>
+        <dd lang="de">Grundkenntnisse mit STM32 (Datenerfassung und Signalaufbereitung) in Studienprojekten</dd>
 
-        <dt><span lang="es">Áreas de interés</span><span lang="en">Areas of interest</span></dt>
-        <dd lang="es">Redes de comunicación industrial, desarrollo web full-stack</dd>
+        <dt><span lang="en">Areas of interest</span><span lang="de">Interessensgebiete</span></dt>
         <dd lang="en">Industrial communication networks, full-stack web development</dd>
+        <dd lang="de">Industrielle Kommunikationsnetze, Full-Stack-Webentwicklung</dd>
 
-        <dt><span lang="es">Idiomas</span><span lang="en">Languages</span></dt>
-        <dd lang="es">Español (nativo), Inglés (B2 — TOEFL ITP), Alemán (A2 — Goethe A2)</dd>
+        <dt><span lang="en">Languages</span><span lang="de">Sprachen</span></dt>
         <dd lang="en">Spanish (native), English (B2 — TOEFL ITP), German (A2 — Goethe A2)</dd>
+        <dd lang="de">Spanisch (Muttersprache), Englisch (B2 — TOEFL ITP), Deutsch (A2 — Goethe A2)</dd>
       </dl>
     </section>
 
     <!-- ============ PROYECTOS ============ -->
     <section id="proyectos">
-      <h2><span lang="es">Proyectos</span><span lang="en">Projects</span></h2>
+      <div class="seccion-cabeza">
+        <h2><span lang="en">Projects</span><span lang="de">Projekte</span></h2>
+        <p class="seccion-sub"><span lang="en">Automation, robotics, simulation and software</span><span lang="de">Automatisierung, Robotik, Simulation und Software</span></p>
+      </div>
 
       <article>
+        <img loading="lazy" class="project-blueprint" src="assets/img/ilustracion-delta.svg" alt="Illustrative schematic (not a photo): igus delta robot on a conveyor belt, with a camera." width="640" height="520">
         <div class="project-body">
           <h3>
-            <span lang="es">Puesta en marcha de un robot delta igus con banda transportadora</span><span lang="en">Commissioning an igus delta robot with a conveyor belt</span>
-            <span class="estado-proyecto"><span lang="es">En curso</span><span lang="en">In progress</span></span>
+            <span lang="en">Commissioning an igus delta robot with a conveyor belt</span><span lang="de">Inbetriebnahme eines igus-Deltaroboters mit Förderband</span>
+            <span class="estado-proyecto"><span lang="en">In progress</span><span lang="de">Laufend</span></span>
           </h3>
-          <p lang="es">
-            Proyecto de laboratorio en la Hochschule Zittau/Görlitz, como parte de
-            mis materias del programa de doble titulación. Estoy poniendo en marcha
-            una celda nueva de automatización de bajo costo: un robot delta igus
-            drylin DLE-DR (espacio de trabajo de 660 mm de diámetro, 3 ejes lineales
-            con motores paso a paso y encoder) montado sobre una banda
-            transportadora mk, con control igus Robot Control y un variador de
-            frecuencia SEW para la banda. El proyecto está en etapa de puesta en
-            marcha.
-          </p>
           <p lang="en">
             A lab project at Hochschule Zittau/Görlitz, part of my coursework in the
             double-degree program. I am commissioning a new low-cost automation
             cell: an igus drylin DLE-DR delta robot (660 mm diameter workspace,
             3 linear axes with stepper motors and encoders) mounted on an mk
             conveyor belt, with igus Robot Control and an SEW frequency inverter for
-            the belt. The project is in the commissioning stage.
+            the belt.
+          </p>
+          <p lang="de">
+            Ein Laborprojekt an der Hochschule Zittau/Görlitz im Rahmen meiner
+            Lehrveranstaltungen im Doppelabschlussprogramm. Ich nehme eine neue
+            Low-Cost-Automatisierungszelle in Betrieb: einen igus drylin DLE-DR
+            Deltaroboter (Arbeitsraum mit 660 mm Durchmesser, 3 Linearachsen mit
+            Schrittmotoren und Encodern) auf einem mk-Förderband, mit igus Robot
+            Control und einem SEW-Frequenzumrichter für das Band.
           </p>
           <ul>
-            <li lang="es"><strong>Hecho con:</strong> igus Robot Control (iRC), bus CAN, Ethernet, variador SEW MOVITRAC LTE-B+</li>
-            <li lang="en"><strong>Built with:</strong> igus Robot Control (iRC), CAN bus, Ethernet, SEW MOVITRAC LTE-B+ inverter</li>
-            <li lang="es"><strong>Contexto:</strong> laboratorio de la Hochschule Zittau/Görlitz · octubre 2026 – actualidad</li>
+            <li lang="en"><strong>Built with:</strong> igus Robot Control (iRC), CAN bus, Ethernet, digital I/O, pneumatic soft gripper, SEW MOVITRAC LTE-B+ inverter</li>
+            <li lang="de"><strong>Umgesetzt mit:</strong> igus Robot Control (iRC), CAN-Bus, Ethernet, digitale E/A, pneumatischer Soft-Greifer, SEW MOVITRAC LTE-B+ Frequenzumrichter</li>
             <li lang="en"><strong>Context:</strong> Hochschule Zittau/Görlitz lab · October 2026 – present</li>
-            <li lang="es">
-              <strong>Objetivo:</strong> integrar el robot delta, la banda y una
-              cámara en un sistema funcional que detecte objetos en movimiento y los
-              clasifique en el contenedor correcto, como demostrador del proyecto
-              RoSa-ReCycle.
+            <li lang="de"><strong>Kontext:</strong> Labor der Hochschule Zittau/Görlitz · Oktober 2026 – heute</li>
+            <li lang="en">
+              <strong>Status:</strong> robot commissioned (homing, jogging,
+              Cartesian motion and programs) and matched to its 3D simulation; the
+              soft gripper is controlled via digital outputs and a grasping program
+              works. A bottle pick-and-place and the conveyor integration are in
+              progress.
+            </li>
+            <li lang="de">
+              <strong>Stand:</strong> Roboter in Betrieb genommen (Referenzierung,
+              Handverfahren, kartesische Bewegung und Programme) und mit der
+              3D-Simulation abgeglichen; der Soft-Greifer wird über digitale
+              Ausgänge angesteuert und ein Greifprogramm funktioniert. Ein
+              Pick-and-Place einer Flasche und die Anbindung des Förderbands sind in
+              Arbeit.
             </li>
             <li lang="en">
               <strong>Goal:</strong> integrate the delta robot, the conveyor and a
               camera into a working system that detects moving objects and sorts them
               into the right bin, as a demonstrator for the RoSa-ReCycle project.
             </li>
+            <li lang="de">
+              <strong>Ziel:</strong> Deltaroboter, Förderband und eine Kamera zu
+              einem funktionsfähigen System zu integrieren, das bewegte Objekte
+              erkennt und in den richtigen Behälter sortiert — als Demonstrator für
+              das Projekt RoSa-ReCycle.
+            </li>
           </ul>
-          <p lang="es"><em>
-            Antes ya había hecho un pick &amp; place con una cámara Cognex y un
-            robot xArm.
-          </em></p>
           <p lang="en"><em>
             I had previously built a pick-and-place application with a Cognex camera
             and an xArm robot.
+          </em></p>
+          <p lang="de"><em>
+            Zuvor habe ich bereits eine Pick-and-Place-Anwendung mit einer
+            Cognex-Kamera und einem xArm-Roboter umgesetzt.
           </em></p>
         </div>
       </article>
 
       <article>
-        <img loading="lazy" src="assets/img/playground-pid.png" alt="Captura del Playground de control PID: la gráfica muestra la respuesta al escalón con sobrepaso y la línea del pico; debajo, las métricas (sobrepaso 23,1 %, tiempo de subida 0,45 s) y los deslizadores de Kp, Ki y Kd." width="1920" height="990">
+        <img loading="lazy" src="assets/img/playground-pid.png" alt="Screenshot of the PID control playground: the chart shows the step response with overshoot and the peak line; below, the metrics (overshoot 23.1 %, rise time 0.45 s) and the Kp, Ki and Kd sliders." width="1920" height="990">
         <div class="project-body">
-          <h3><span lang="es">Playground de control PID — app web interactiva</span><span lang="en">PID control playground — interactive web app</span></h3>
-          <p lang="es">
-            Aplicación web para entender el control PID jugando. Una planta
-            simulada (como la velocidad de un motor) se controla con un PID que
-            ajustas en tiempo real: deslizadores para Kp, Ki y Kd, presets, y una
-            gráfica en vivo con las métricas de desempeño. Es mi segundo proyecto
-            de programación y lo hice para aprender JavaScript moderno.
-          </p>
+          <h3><span lang="en">PID control playground — interactive web app</span><span lang="de">PID-Regelungs-Playground — interaktive Web-App</span></h3>
           <p lang="en">
             A web app for learning PID control by playing with it. A simulated
             plant (like a motor's speed) is controlled by a PID you tune in real
@@ -219,18 +277,17 @@
             performance metrics. It is my second programming project, built to
             learn modern JavaScript.
           </p>
+          <p lang="de">
+            Eine Web-App, um PID-Regelung spielerisch zu verstehen. Eine simulierte
+            Regelstrecke (z. B. die Drehzahl eines Motors) wird von einem
+            PID-Regler geregelt, den man in Echtzeit einstellt: Schieberegler für
+            Kp, Ki und Kd, Voreinstellungen und ein Live-Diagramm mit
+            Gütekennzahlen. Es ist mein zweites Programmierprojekt, mit dem ich
+            modernes JavaScript gelernt habe.
+          </p>
           <ul>
-            <li lang="es"><strong>Hecho con:</strong> JavaScript (módulos ES) y Vite, sin frameworks</li>
             <li lang="en"><strong>Built with:</strong> JavaScript (ES modules) and Vite, no frameworks</li>
-            <li lang="es">
-              <strong>Incluye:</strong> simulación de una planta de primer orden
-              integrada con Euler, controlador PID con anti-windup, gráfica en
-              <code>&lt;canvas&gt;</code> nítida en pantallas HiDPI y con modo
-              oscuro, métricas calculadas al vuelo (sobrepaso, tiempo de subida,
-              tiempo de establecimiento ±2 % y error en estado estable), presets
-              de ajuste, respuesta al escalón y soporte de
-              <code>prefers-reduced-motion</code>.
-            </li>
+            <li lang="de"><strong>Umgesetzt mit:</strong> JavaScript (ES-Module) und Vite, ohne Frameworks</li>
             <li lang="en">
               <strong>Includes:</strong> a first-order plant simulation
               integrated with Euler, a PID controller with anti-windup, a crisp
@@ -239,11 +296,14 @@
               time, steady-state error), tuning presets, step response, and
               <code>prefers-reduced-motion</code> support.
             </li>
-            <li lang="es">
-              <strong>Qué aprendí:</strong> JavaScript moderno con módulos ES, el
-              bucle de animación con <code>requestAnimationFrame</code> y paso de
-              tiempo fijo, dibujo en <code>&lt;canvas&gt;</code>, y separar
-              simulación, control y presentación en módulos con funciones puras.
+            <li lang="de">
+              <strong>Funktionen:</strong> Simulation einer Strecke erster Ordnung
+              mit Euler-Integration, PID-Regler mit Anti-Windup, scharfes
+              <code>&lt;canvas&gt;</code>-Diagramm mit HiDPI-Unterstützung und
+              Dark Mode, live berechnete Kennzahlen (Überschwingen, Anstiegszeit,
+              ±2-%-Ausregelzeit, bleibende Regelabweichung), Voreinstellungen,
+              Sprungantwort und Unterstützung für
+              <code>prefers-reduced-motion</code>.
             </li>
             <li lang="en">
               <strong>What I learned:</strong> modern JavaScript with ES modules,
@@ -252,144 +312,157 @@
               splitting simulation, control, and presentation into modules with
               pure functions.
             </li>
+            <li lang="de">
+              <strong>Was ich gelernt habe:</strong> modernes JavaScript mit
+              ES-Modulen, die Animationsschleife mit
+              <code>requestAnimationFrame</code> und festem Zeitschritt, Zeichnen
+              auf <code>&lt;canvas&gt;</code> sowie die Aufteilung von Simulation,
+              Regelung und Darstellung in Module mit reinen Funktionen.
+            </li>
           </ul>
           <p>
-            <a class="play-link" href="https://jaretjrd-source.github.io/playground-pid/" target="_blank" rel="noopener"><span lang="es">Abrir el playground</span><span lang="en">Open the playground</span></a>
-            · <a href="https://github.com/jaretjrd-source/playground-pid"><span lang="es">Código en GitHub</span><span lang="en">Code on GitHub</span></a>
+            <a class="play-link" href="https://jaretjrd-source.github.io/playground-pid/" target="_blank" rel="noopener"><span lang="en">Open the playground</span><span lang="de">Playground öffnen</span></a>
+            · <a href="https://github.com/jaretjrd-source/playground-pid"><span lang="en">Code on GitHub</span><span lang="de">Code auf GitHub</span></a>
           </p>
         </div>
       </article>
 
       <article>
-        <img loading="lazy" src="assets/img/celda-robotica.jpg" alt="Simulación en RobotStudio de una celda robótica con robots ABB, transportadores y vallado de seguridad." width="1280" height="958">
+        <img loading="lazy" src="assets/img/celda-robotica.jpg" alt="RobotStudio simulation of a robotic cell with ABB robots, conveyors and safety fencing." width="1280" height="958">
         <div class="project-body">
-          <h3><span lang="es">Celda robótica — propuesta y simulación</span><span lang="en">Robotic cell — proposal and simulation</span></h3>
-          <p lang="es">
-            Proyecto de una materia del Tecnológico de Monterrey, con ABB como
-            socio formador. En equipo desarrollamos la propuesta de una celda
-            robótica industrial y la validamos mediante simulación en RobotStudio:
-            definición del layout, alcance del robot y secuencia de operación.
-          </p>
+          <h3><span lang="en">Robotic cell — proposal and simulation</span><span lang="de">Roboterzelle — Konzept und Simulation</span></h3>
           <p lang="en">
             A university course project at Tecnológico de Monterrey, with ABB as the
             industry partner. As a team we developed the proposal for an industrial
             robotic cell and validated it through simulation in RobotStudio: layout
             definition, robot reach, and operation sequence.
           </p>
+          <p lang="de">
+            Ein Studienprojekt am Tecnológico de Monterrey mit ABB als
+            Industriepartner. Im Team haben wir das Konzept einer industriellen
+            Roboterzelle entwickelt und durch Simulation in RobotStudio validiert:
+            Layout, Reichweite des Roboters und Ablaufsequenz.
+          </p>
           <ul>
-            <li lang="es"><strong>Hecho con:</strong> RobotStudio (ABB)</li>
             <li lang="en"><strong>Built with:</strong> RobotStudio (ABB)</li>
-            <li lang="es"><strong>Contexto:</strong> proyecto académico en equipo, Tecnológico de Monterrey · socio formador: ABB</li>
+            <li lang="de"><strong>Umgesetzt mit:</strong> RobotStudio (ABB)</li>
             <li lang="en"><strong>Context:</strong> academic team project, Tecnológico de Monterrey · industry partner: ABB</li>
-            <li lang="es"><strong>Mi rol:</strong> desarrollo de la propuesta y de la simulación</li>
+            <li lang="de"><strong>Kontext:</strong> akademisches Teamprojekt, Tecnológico de Monterrey · Industriepartner: ABB</li>
             <li lang="en"><strong>My role:</strong> proposal development and simulation</li>
+            <li lang="de"><strong>Meine Rolle:</strong> Entwicklung des Konzepts und der Simulation</li>
           </ul>
-          <p lang="es"><em>Solo propuesta y simulación; no incluye implementación ni datos internos del socio.</em></p>
           <p lang="en"><em>Proposal and simulation only; no implementation or partner-internal data.</em></p>
+          <p lang="de"><em>Nur Konzept und Simulation; keine Umsetzung und keine internen Daten des Partners.</em></p>
         </div>
       </article>
 
       <article>
-        <img loading="lazy" src="assets/img/gemelo-digital.jpg" alt="Modelo de simulación en Process Simulate de una línea de producción con transportadores, cajas y una estación de trabajo." width="1280" height="718">
+        <img loading="lazy" src="assets/img/gemelo-digital.jpg" alt="Process Simulate model of a production line with conveyors, boxes and a workstation." width="1280" height="718">
         <div class="project-body">
-          <h3><span lang="es">Gemelo digital de una línea de producción</span><span lang="en">Digital twin of a production line</span></h3>
-          <p lang="es">
-            Proyecto de una materia del Tecnológico de Monterrey, con Carrier como
-            socio formador. Construimos el gemelo digital de una línea de
-            producción para modelar el estado actual y comparar propuestas de
-            mejora sobre el flujo del proceso.
-          </p>
+          <h3><span lang="en">Digital twin of a production line</span><span lang="de">Digitaler Zwilling einer Produktionslinie</span></h3>
           <p lang="en">
             A university course project at Tecnológico de Monterrey, with Carrier as
             the industry partner. We built the digital twin of a production line to
             model the current state and compare improvement proposals on the process
             flow.
           </p>
+          <p lang="de">
+            Ein Studienprojekt am Tecnológico de Monterrey mit Carrier als
+            Industriepartner. Wir haben den digitalen Zwilling einer
+            Produktionslinie erstellt, um den Ist-Zustand abzubilden und
+            Verbesserungsvorschläge für den Prozessablauf zu vergleichen.
+          </p>
           <ul>
-            <li lang="es"><strong>Hecho con:</strong> Tecnomatix Plant Simulation y Process Simulate (Siemens)</li>
             <li lang="en"><strong>Built with:</strong> Tecnomatix Plant Simulation and Process Simulate (Siemens)</li>
-            <li lang="es"><strong>Contexto:</strong> proyecto académico en equipo, Tecnológico de Monterrey · socio formador: Carrier</li>
+            <li lang="de"><strong>Umgesetzt mit:</strong> Tecnomatix Plant Simulation und Process Simulate (Siemens)</li>
             <li lang="en"><strong>Context:</strong> academic team project, Tecnológico de Monterrey · industry partner: Carrier</li>
-            <li lang="es"><strong>Mi rol:</strong> modelado del gemelo digital y análisis de escenarios</li>
+            <li lang="de"><strong>Kontext:</strong> akademisches Teamprojekt, Tecnológico de Monterrey · Industriepartner: Carrier</li>
             <li lang="en"><strong>My role:</strong> digital twin modeling and scenario analysis</li>
+            <li lang="de"><strong>Meine Rolle:</strong> Modellierung des digitalen Zwillings und Szenarioanalyse</li>
           </ul>
-          <p lang="es"><em>Solo propuesta y simulación; no incluye datos de producción del socio.</em></p>
           <p lang="en"><em>Proposal and simulation only; no partner production data.</em></p>
+          <p lang="de"><em>Nur Konzept und Simulation; keine Produktionsdaten des Partners.</em></p>
         </div>
       </article>
     </section>
 
     <!-- ============ EXPERIENCIA ============ -->
     <section id="experiencia">
-      <h2><span lang="es">Experiencia</span><span lang="en">Experience</span></h2>
+      <div class="seccion-cabeza">
+        <h2><span lang="en">Experience</span><span lang="de">Erfahrung</span></h2>
+        <p class="seccion-sub"><span lang="en">Industrial networking research</span><span lang="de">Forschung zu industriellen Netzwerken</span></p>
+      </div>
 
       <article>
-        <h3><span lang="es">Practicante en Investigación de Redes Industriales</span><span lang="en">Industrial Networks Research Intern</span></h3>
-        <p lang="es"><strong>Neoterra Lumina</strong> · Hermosillo, Sonora, México · junio 2026 – septiembre 2026 (3 meses)</p>
+        <h3><span lang="en">Industrial Networks Research Intern</span><span lang="de">Praktikant · Forschung zu industriellen Netzwerken</span></h3>
         <p lang="en"><strong>Neoterra Lumina</strong> · Hermosillo, Sonora, Mexico · June 2026 – September 2026 (3 months)</p>
+        <p lang="de"><strong>Neoterra Lumina</strong> · Hermosillo, Sonora, Mexiko · Juni 2026 – September 2026 (3 Monate)</p>
         <ul>
-          <li lang="es">Investigación y recolección de información sobre dispositivos de red industrial (computadoras industriales y gateways) para la adquisición y envío de datos a la nube.</li>
           <li lang="en">Researched and gathered information on industrial networking devices (industrial computers and gateways) for data acquisition and upload to the cloud.</li>
-          <li lang="es">Elaboración de una propuesta de estructura de comunicación cableada Ethernet/RJ45 para la planta, además de investigación sobre conversión de protocolo de RS-232 a Ethernet.</li>
+          <li lang="de">Recherche zu industriellen Netzwerkgeräten (Industrie-PCs und Gateways) für die Datenerfassung und die Übertragung in die Cloud.</li>
           <li lang="en">Developed a proposed wired Ethernet/RJ45 communication structure for the plant, along with research on RS-232-to-Ethernet protocol conversion.</li>
-          <li lang="es">Documentación técnica y presentación de hallazgos al equipo.</li>
+          <li lang="de">Entwurf einer kabelgebundenen Ethernet/RJ45-Kommunikationsstruktur für das Werk sowie Recherche zur Protokollumsetzung von RS-232 auf Ethernet.</li>
           <li lang="en">Produced technical documentation and presented findings to the team.</li>
-          <li lang="es">Inicié también la exploración de fundamentos de desarrollo de software (backend y frontend), en paralelo al trabajo de automatización y redes.</li>
+          <li lang="de">Erstellung technischer Dokumentation und Präsentation der Ergebnisse im Team.</li>
           <li lang="en">Also began exploring software development fundamentals (backend and frontend), alongside the automation and networking work.</li>
+          <li lang="de">Parallel zur Automatisierungs- und Netzwerkarbeit erste Schritte in den Grundlagen der Softwareentwicklung (Backend und Frontend).</li>
         </ul>
       </article>
     </section>
 
     <!-- ============ EDUCACIÓN ============ -->
     <section id="educacion">
-      <h2><span lang="es">Educación</span><span lang="en">Education</span></h2>
+      <div class="seccion-cabeza">
+        <h2><span lang="en">Education</span><span lang="de">Ausbildung</span></h2>
+        <p class="seccion-sub"><span lang="en">Tec de Monterrey and Hochschule Zittau/Görlitz</span><span lang="de">Tec de Monterrey und Hochschule Zittau/Görlitz</span></p>
+      </div>
 
       <article class="edu-item">
         <img loading="lazy" class="edu-logo" src="assets/img/TEC.png" alt="Tecnológico de Monterrey" width="277" height="327">
         <div>
-          <h3>Tecnológico de Monterrey — <span lang="es">Monterrey, México</span><span lang="en">Monterrey, Mexico</span></h3>
-          <p lang="es">Ingeniería en Mecatrónica · agosto 2023 – junio 2028 (graduación esperada)</p>
+          <h3>Tecnológico de Monterrey — <span lang="en">Monterrey, Mexico</span><span lang="de">Monterrey, Mexiko</span></h3>
           <p lang="en">B.S. in Mechatronics Engineering · August 2023 – June 2028 (expected graduation)</p>
-          <p lang="es">Promedio: 93.9 / 100 · Beca de Excelencia Académica (40 %)</p>
+          <p lang="de">Bachelor in Mechatronik · August 2023 – Juni 2028 (voraussichtlicher Abschluss)</p>
           <p lang="en">GPA: 93.9 / 100 · Academic Merit Scholarship (40%)</p>
+          <p lang="de">Notendurchschnitt: 93,9 / 100 · Leistungsstipendium (40 %)</p>
         </div>
       </article>
 
       <article class="edu-item edu-item--wide">
         <img loading="lazy" class="edu-logo edu-logo--wide" src="assets/img/hszg.svg" alt="Hochschule Zittau/Görlitz" width="450" height="75">
         <div>
-          <h3><span lang="es">Programa DHIK — Alemania · ciclo 2026–2027</span><span lang="en">DHIK program — Germany · 2026–2027 cycle</span></h3>
-          <p lang="es">
-            Programa de un año: un semestre de estudios en la Hochschule
-            Zittau/Görlitz (semestre de invierno 2026/2027, inicio de clases el
-            5 de octubre de 2026) seguido de un semestre de prácticas profesionales
-            en la industria alemana.
-          </p>
+          <h3><span lang="en">DHIK program — Germany · 2026–2027 cycle</span><span lang="de">DHIK-Programm — Deutschland · Studienjahr 2026–2027</span></h3>
           <p lang="en">
             A one-year program: one semester of study at Hochschule Zittau/Görlitz
             (winter semester 2026/2027, classes starting 5 October 2026) followed by
             one semester of a professional internship in German industry.
           </p>
-          <p lang="es">
-            <strong>Materias del semestre:</strong> Mechatronics Project Work,
-            Artificial Neural Networks, Microcontrollers, Image Processing e
-            Introduction to Cobots, además de un curso de alemán.
+          <p lang="de">
+            Ein einjähriges Programm: ein Studiensemester an der Hochschule
+            Zittau/Görlitz (Wintersemester 2026/2027, Vorlesungsbeginn am
+            5. Oktober 2026), gefolgt von einem Praxissemester in der deutschen
+            Industrie.
           </p>
           <p lang="en">
             <strong>Courses this semester:</strong> Mechatronics Project Work,
             Artificial Neural Networks, Microcontrollers, Image Processing and
             Introduction to Cobots, plus a German language course.
           </p>
+          <p lang="de">
+            <strong>Lehrveranstaltungen in diesem Semester:</strong> Mechatronics
+            Project Work, Artificial Neural Networks, Microcontrollers, Image
+            Processing und Introduction to Cobots sowie ein Deutschkurs.
+          </p>
         </div>
       </article>
 
-      <h3><span lang="es">Certificaciones</span><span lang="en">Certifications</span></h3>
+      <h3><span lang="en">Certifications</span><span lang="de">Zertifikate</span></h3>
       <ul>
         <li>PLC Fundamentals — Udemy (2026)</li>
         <li>e-Series Core Track — Universal Robots (2026)</li>
         <li>Cobot Material Handling for the GoFa with OmniCore — ABB (2026)</li>
-        <li lang="es">Electrónica Básica y Circuitos Integrados Lineales — ITESM (2025)</li>
         <li lang="en">Basic Electronics and Linear Integrated Circuits — ITESM (2025)</li>
+        <li lang="de">Grundlagen der Elektronik und lineare integrierte Schaltungen — ITESM (2025)</li>
         <li>Goethe-Zertifikat A2 (2026)</li>
         <li>TOEFL ITP</li>
       </ul>
@@ -397,12 +470,15 @@
 
     <!-- ============ CONTACTO ============ -->
     <section id="contacto">
-      <h2><span lang="es">Contacto</span><span lang="en">Contact</span></h2>
+      <div class="seccion-cabeza">
+        <h2><span lang="en">Contact</span><span lang="de">Kontakt</span></h2>
+        <p class="seccion-sub"><span lang="en">Open to internships in Germany · from March 2027</span><span lang="de">Offen für Praktika in Deutschland · ab März 2027</span></p>
+      </div>
       <ul>
-        <li><span lang="es">Correo:</span><span lang="en">Email:</span> <a href="mailto:jaret.jrd@gmail.com">jaret.jrd@gmail.com</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/jaretrubiodelgado">linkedin.com/in/jaretrubiodelgado</a></li>
-        <li>GitHub: <a href="https://github.com/jaretjrd-source">github.com/jaretjrd-source</a></li>
-        <li>CV: <a href="assets/CV_Jaret_Rubio.pdf" target="_blank" rel="noopener"><span lang="es">Ver currículum (inglés, PDF)</span><span lang="en">View résumé (PDF)</span></a></li>
+        <li><span lang="en">Email</span><span lang="de">E-Mail</span> <a href="mailto:jaret.jrd@gmail.com">jaret.jrd@gmail.com</a></li>
+        <li>LinkedIn <a href="https://www.linkedin.com/in/jaretrubiodelgado">linkedin.com/in/jaretrubiodelgado</a></li>
+        <li>GitHub <a href="https://github.com/jaretjrd-source">github.com/jaretjrd-source</a></li>
+        <li><span lang="en">Résumé</span><span lang="de">Lebenslauf</span> <a href="assets/CV_Jaret_Rubio.pdf" target="_blank" rel="noopener"><span lang="en">View résumé (PDF)</span><span lang="de">Lebenslauf ansehen (Englisch, PDF)</span></a></li>
       </ul>
     </section>
 
