@@ -18,7 +18,7 @@ Objetivo: tener una página publicada que muestre quién soy, mis proyectos (inc
   etiqueta), con "Section / Abschnitt 0X", título y subtítulo. Íconos en
   `assets/img/banda-*.svg` (inglés) y `banda-*-de.svg` (alemán).
 - **Tarjetas:** proyectos numerados ("Proyecto 01…") con línea de acento; el proyecto del robot
-  delta usa un esquema ilustrado (`assets/img/ilustracion-delta.svg`, marcado como esquema, no foto).
+  delta usa una foto real del laboratorio (`assets/img/delta-robot.jpg`, recortada y sin metadatos/GPS).
   Experiencia y educación en tarjetas, certificaciones en mosaico, contacto en recuadros y pie de
   página en el mismo azul.
 - **Diseño móvil:** la página se adapta al teléfono (≤ 600 px): header compacto con el menú

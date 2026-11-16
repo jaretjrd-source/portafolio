@@ -746,18 +746,9 @@ dd {
   font-size: 1.2rem;
 }
 
-/* Esquema ilustrado (proyecto sin foto): sobre el mismo azul plano */
-#proyectos img.project-blueprint {
-  height: 340px;
-  max-height: none;
-  padding: 1.25rem;
-  object-fit: contain;
-  object-position: center;
-  border-color: rgba(169, 199, 221, 0.25);
-  background:
-    linear-gradient(var(--plano-linea) 1px, transparent 1px) 0 0 / 24px 24px,
-    linear-gradient(90deg, var(--plano-linea) 1px, transparent 1px) 0 0 / 24px 24px,
-    var(--plano);
+/* Foto del robot delta: si se recorta, que se vea el gripper con el objeto (parte de abajo) */
+#proyectos img.project-photo {
+  object-position: center bottom;
 }
 
 /* Etiqueta de estado de un proyecto (p. ej. "En curso") */
@@ -1111,11 +1102,6 @@ footer p {
 
   #proyectos article {
     margin-bottom: 1.5rem;
-  }
-
-  #proyectos img.project-blueprint {
-    height: 220px;
-    padding: 0.75rem;
   }
 
   #experiencia article,
