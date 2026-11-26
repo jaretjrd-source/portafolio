@@ -1,41 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 360">
-  <!-- Franja "experiencia" (en): íconos rellenos de los temas / dispositivos de la sección -->
+  <!-- Franja "experiencia" (en): íconos planos de los temas / dispositivos de la sección -->
   <defs>
-    <linearGradient id="fondoChico" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2c2c2c"/><stop offset="1" stop-color="#0f0f0f"/></linearGradient>
-    <linearGradient id="fondoGrande" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="#f3d77f"/><stop offset="0.55" stop-color="#d4af37"/><stop offset="1" stop-color="#a8841f"/></linearGradient>
-    <linearGradient id="brillo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.14"/><stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
-    <filter id="sombra" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#000000" flood-opacity="0.55"/></filter>
+    <filter id="sombra" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/></filter>
   </defs>
-  <g filter="url(#sombra)"><rect x="586" y="124" width="116" height="116" rx="27.84" fill="url(#fondoChico)"/></g>
-  <rect x="586" y="124" width="116" height="116" rx="27.84" fill="url(#brillo)" stroke="#d4af37" stroke-opacity="0.55" stroke-width="1.5"/>
-  <g transform="translate(604.56,142.56) scale(0.79)"><rect x="22" y="14" width="56" height="54" rx="6" fill="#f6f1e4"/><rect x="38" y="68" width="24" height="12" rx="2" fill="#f6f1e4"/><rect x="44" y="80" width="12" height="14" rx="2" fill="#d4af37"/><rect x="29" y="20" width="3" height="16" rx="1" fill="#141414"/><rect x="34.6" y="20" width="3" height="16" rx="1" fill="#d4af37"/><rect x="40.2" y="20" width="3" height="16" rx="1" fill="#141414"/><rect x="45.8" y="20" width="3" height="16" rx="1" fill="#d4af37"/><rect x="51.4" y="20" width="3" height="16" rx="1" fill="#141414"/><rect x="57" y="20" width="3" height="16" rx="1" fill="#d4af37"/><rect x="62.599999999999994" y="20" width="3" height="16" rx="1" fill="#141414"/><rect x="68.19999999999999" y="20" width="3" height="16" rx="1" fill="#d4af37"/><rect x="30" y="46" width="40" height="12" rx="3" fill="#d4af37" opacity="0.55"/></g>
-  <text x="644" y="272" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.6" fill="#d4af37" text-anchor="middle">ETHERNET</text>
-  <g filter="url(#sombra)"><rect x="722" y="124" width="116" height="116" rx="27.84" fill="url(#fondoChico)"/></g>
-  <rect x="722" y="124" width="116" height="116" rx="27.84" fill="url(#brillo)" stroke="#d4af37" stroke-opacity="0.55" stroke-width="1.5"/>
-  <g transform="translate(740.56,142.56) scale(0.79)"><rect x="20" y="14" width="7" height="34" rx="3.5" fill="#f6f1e4"/><rect x="73" y="14" width="7" height="34" rx="3.5" fill="#f6f1e4"/>
+  <rect x="658" y="104" width="124" height="124" rx="29.76" fill="#161616" stroke="#d4af37" stroke-opacity="0.7" stroke-width="1.5" filter="url(#sombra)"/>
+  <g transform="translate(677.84,123.84) scale(0.84)"><rect x="22" y="14" width="56" height="54" rx="6" fill="#f6f1e4"/><rect x="38" y="68" width="24" height="12" rx="2" fill="#f6f1e4"/><rect x="44" y="80" width="12" height="14" rx="2" fill="#d4af37"/><rect x="29" y="20" width="3" height="16" rx="1" fill="#141414"/><rect x="34.6" y="20" width="3" height="16" rx="1" fill="#d4af37"/><rect x="40.2" y="20" width="3" height="16" rx="1" fill="#141414"/><rect x="45.8" y="20" width="3" height="16" rx="1" fill="#d4af37"/><rect x="51.4" y="20" width="3" height="16" rx="1" fill="#141414"/><rect x="57" y="20" width="3" height="16" rx="1" fill="#d4af37"/><rect x="62.599999999999994" y="20" width="3" height="16" rx="1" fill="#141414"/><rect x="68.19999999999999" y="20" width="3" height="16" rx="1" fill="#d4af37"/><rect x="30" y="46" width="40" height="12" rx="3" fill="#d4af37" opacity="0.55"/></g>
+  <text x="720" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.6" fill="#d4af37" text-anchor="middle">ETHERNET</text>
+  <rect x="800" y="104" width="124" height="124" rx="29.76" fill="#161616" stroke="#d4af37" stroke-opacity="0.7" stroke-width="1.5" filter="url(#sombra)"/>
+  <g transform="translate(819.84,123.84) scale(0.84)"><rect x="20" y="14" width="7" height="34" rx="3.5" fill="#f6f1e4"/><rect x="73" y="14" width="7" height="34" rx="3.5" fill="#f6f1e4"/>
      <path d="M37,30 a18,18 0 0 1 26,0 M43,36 a9,9 0 0 1 14,0" fill="none" stroke="#d4af37" stroke-width="4" stroke-linecap="round"/>
      <rect x="8" y="46" width="84" height="32" rx="8" fill="#f6f1e4"/>
      <circle cx="22" cy="62" r="4" fill="#d4af37"/><circle cx="34" cy="62" r="4" fill="#d4af37"/><circle cx="46" cy="62" r="4" fill="#141414" opacity="0.6"/>
      <rect x="60" y="57" width="9" height="10" rx="1.5" fill="#141414"/><rect x="73" y="57" width="9" height="10" rx="1.5" fill="#141414"/></g>
-  <text x="780" y="272" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.6" fill="#d4af37" text-anchor="middle">GATEWAY</text>
-  <g filter="url(#sombra)"><rect x="858" y="124" width="116" height="116" rx="27.84" fill="url(#fondoChico)"/></g>
-  <rect x="858" y="124" width="116" height="116" rx="27.84" fill="url(#brillo)" stroke="#d4af37" stroke-opacity="0.55" stroke-width="1.5"/>
-  <g transform="translate(876.56,142.56) scale(0.79)"><g fill="#f6f1e4"><circle cx="32" cy="58" r="17"/><circle cx="52" cy="44" r="22"/><circle cx="72" cy="58" r="16"/><rect x="30" y="56" width="44" height="19" rx="9"/></g>
+  <text x="862" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.6" fill="#d4af37" text-anchor="middle">GATEWAY</text>
+  <rect x="942" y="104" width="124" height="124" rx="29.76" fill="#161616" stroke="#d4af37" stroke-opacity="0.7" stroke-width="1.5" filter="url(#sombra)"/>
+  <g transform="translate(961.84,123.84) scale(0.84)"><g fill="#f6f1e4"><circle cx="32" cy="58" r="17"/><circle cx="52" cy="44" r="22"/><circle cx="72" cy="58" r="16"/><rect x="30" y="56" width="44" height="19" rx="9"/></g>
      <path d="M51,70 V46 M42,54 L51,45 L60,54" fill="none" stroke="#d4af37" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g>
-  <text x="916" y="272" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.6" fill="#d4af37" text-anchor="middle">CLOUD</text>
-  <g filter="url(#sombra)"><rect x="994" y="124" width="116" height="116" rx="27.84" fill="url(#fondoChico)"/></g>
-  <rect x="994" y="124" width="116" height="116" rx="27.84" fill="url(#brillo)" stroke="#d4af37" stroke-opacity="0.55" stroke-width="1.5"/>
-  <g transform="translate(1012.56,142.56) scale(0.79)"><path d="M20,8 H62 L80,26 V92 H20 Z" fill="#f6f1e4"/>
+  <text x="1004" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.6" fill="#d4af37" text-anchor="middle">CLOUD</text>
+  <rect x="1084" y="104" width="124" height="124" rx="29.76" fill="#161616" stroke="#d4af37" stroke-opacity="0.7" stroke-width="1.5" filter="url(#sombra)"/>
+  <g transform="translate(1103.84,123.84) scale(0.84)"><path d="M20,8 H62 L80,26 V92 H20 Z" fill="#f6f1e4"/>
      <path d="M62,8 V26 H80 Z" fill="#d4af37"/>
      <rect x="28" y="66" width="8" height="16" rx="1.5" fill="#d4af37"/><rect x="40" y="56" width="8" height="26" rx="1.5" fill="#d4af37"/><rect x="52" y="60" width="8" height="22" rx="1.5" fill="#d4af37"/><rect x="64" y="48" width="8" height="34" rx="1.5" fill="#d4af37"/>
      <rect x="28" y="22" width="26" height="4" rx="2" fill="#141414" opacity="0.7"/><rect x="28" y="32" width="40" height="4" rx="2" fill="#141414" opacity="0.5"/><rect x="28" y="40" width="34" height="4" rx="2" fill="#141414" opacity="0.5"/></g>
-  <text x="1052" y="272" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.6" fill="#d4af37" text-anchor="middle">REPORTS</text>
-  <g filter="url(#sombra)"><rect x="1150" y="40" width="200" height="200" rx="48" fill="url(#fondoGrande)"/></g>
-  <rect x="1150" y="40" width="200" height="200" rx="48" fill="url(#brillo)" stroke="#f6e3a3" stroke-opacity="0.7" stroke-width="1.5"/>
-  <g transform="translate(1182,72) scale(1.36)"><g stroke="#141414" stroke-width="5" stroke-linecap="round"><path d="M50,50 L18,20 M50,50 L82,20 M50,50 L16,78 M50,50 L84,78 M18,20 L82,20"/></g>
-     <circle cx="50" cy="50" r="15" fill="#141414"/><circle cx="50" cy="50" r="7" fill="#ffffff"/>
-     <circle cx="18" cy="20" r="10" fill="#ffffff"/><circle cx="82" cy="20" r="10" fill="#ffffff"/>
-     <circle cx="16" cy="78" r="10" fill="#141414"/><circle cx="84" cy="78" r="10" fill="#141414"/>
-     <circle cx="16" cy="78" r="4" fill="#ecd27c"/><circle cx="84" cy="78" r="4" fill="#ecd27c"/></g>
-  <text x="1250" y="272" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="1.6" fill="#d4af37" text-anchor="middle">NETWORKS</text>
+  <text x="1146" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.6" fill="#d4af37" text-anchor="middle">REPORTS</text>
+  <rect x="1226" y="104" width="124" height="124" rx="29.76" fill="#161616" stroke="#d4af37" stroke-opacity="0.7" stroke-width="1.5" filter="url(#sombra)"/>
+  <g transform="translate(1245.84,123.84) scale(0.84)"><g stroke="#f6f1e4" stroke-width="5" stroke-linecap="round"><path d="M50,50 L18,20 M50,50 L82,20 M50,50 L16,78 M50,50 L84,78 M18,20 L82,20"/></g>
+     <circle cx="50" cy="50" r="15" fill="#f6f1e4"/><circle cx="50" cy="50" r="7" fill="#d4af37"/>
+     <circle cx="18" cy="20" r="10" fill="#d4af37"/><circle cx="82" cy="20" r="10" fill="#d4af37"/>
+     <circle cx="16" cy="78" r="10" fill="#f6f1e4"/><circle cx="84" cy="78" r="10" fill="#f6f1e4"/>
+     <circle cx="16" cy="78" r="4" fill="#141414"/><circle cx="84" cy="78" r="4" fill="#141414"/></g>
+  <text x="1288" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.6" fill="#d4af37" text-anchor="middle">NETWORKS</text>
 </svg>
