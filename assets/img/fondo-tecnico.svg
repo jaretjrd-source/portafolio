@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" fill="none" stroke="#5f7f99" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" fill="none" stroke="#b08d2e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
   <!-- Dibujo técnico decorativo para el fondo del inicio (engranes, brazo robótico, cotas, circuito) -->
   <g opacity="0.9">
     <path d="M693.6,239.5 L709.8,242.9 L709.8,257.1 L693.6,260.5 L690.3,281.3 L704.7,289.6 L700.3,303 L683.8,301.3 L674.3,320 L685.4,332.4 L677.1,343.8 L661.9,337 L647,351.9 L653.8,367.1 L642.4,375.4 L630,364.3 L611.3,373.8 L613,390.3 L599.6,394.7 L591.3,380.3 L570.5,383.6 L567.1,399.8 L552.9,399.8 L549.5,383.6 L528.7,380.3 L520.4,394.7 L507,390.3 L508.7,373.8 L490,364.3 L477.6,375.4 L466.2,367.1 L473,351.9 L458.1,337 L442.9,343.8 L434.6,332.4 L445.7,320 L436.2,301.3 L419.7,303 L415.3,289.6 L429.7,281.3 L426.4,260.5 L410.2,257.1 L410.2,242.9 L426.4,239.5 L429.7,218.7 L415.3,210.4 L419.7,197 L436.2,198.7 L445.7,180 L434.6,167.6 L442.9,156.2 L458.1,163 L473,148.1 L466.2,132.9 L477.6,124.6 L490,135.7 L508.7,126.2 L507,109.7 L520.4,105.3 L528.7,119.7 L549.5,116.4 L552.9,100.2 L567.1,100.2 L570.5,116.4 L591.3,119.7 L599.6,105.3 L613,109.7 L611.3,126.2 L630,135.7 L642.4,124.6 L653.8,132.9 L647,148.1 L661.9,163 L677.1,156.2 L685.4,167.6 L674.3,180 L683.8,198.7 L700.3,197 L704.7,210.4 L690.3,218.7 Z"/>
@@ -23,9 +23,9 @@
     <line x1="410" y1="50" x2="410" y2="88"/>
     <line x1="710" y1="50" x2="710" y2="88"/>
     <line x1="410" y1="62" x2="710" y2="62"/>
-    <path d="M410,62 l10,-4 v8 Z M710,62 l-10,-4 v8 Z" fill="#5f7f99"/>
+    <path d="M410,62 l10,-4 v8 Z M710,62 l-10,-4 v8 Z" fill="#b08d2e"/>
   </g>
-  <text x="560" y="52" font-family="Inter, Segoe UI, sans-serif" font-size="15" fill="#5f7f99" stroke="none" text-anchor="middle">Ø 300</text>
+  <text x="560" y="52" font-family="Inter, Segoe UI, sans-serif" font-size="15" fill="#b08d2e" stroke="none" text-anchor="middle">Ø 300</text>
   <!-- brazo robótico (eslabones y articulaciones) -->
   <g stroke-width="1.8">
     <rect x="690" y="560" width="120" height="22" rx="3"/>

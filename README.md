@@ -13,18 +13,20 @@ Objetivo: tener una página publicada que muestre quién soy, mis proyectos (inc
 - **Inicio con fondo técnico:** cuadrícula tipo plano + brillo suave + dibujo técnico propio
   (`assets/img/fondo-tecnico.svg`: engranes, brazo robótico, cotas, circuito), tenue y borroso.
   Secciones numeradas (01, 02…) y tarjetas de proyecto con sombra suave.
-- **Encabezados de sección:** cada sección abre con una franja azul marino de lado a lado
+- **Encabezados de sección:** cada sección abre con una franja negra de lado a lado
   (cuadrícula + íconos rellenos tipo ícono de app de los temas/dispositivos de la sección, con
   etiqueta), con "Section / Abschnitt 0X", título y subtítulo. Íconos en
   `assets/img/banda-*.svg` (inglés) y `banda-*-de.svg` (alemán).
 - **Tarjetas:** proyectos numerados ("Proyecto 01…") con línea de acento; el proyecto del robot
   delta usa una foto real del laboratorio (`assets/img/delta-robot.jpg`, recortada y sin metadatos/GPS).
   Experiencia y educación en tarjetas, certificaciones en mosaico, contacto en recuadros y pie de
-  página en el mismo azul.
+  página en el mismo negro.
 - **Diseño móvil:** la página se adapta al teléfono (≤ 600 px): header compacto con el menú
   en una línea deslizable, Educación con el logo arriba y Skills apiladas.
 - **Estilo visual:** "Minimal técnico" — tipografía Space Grotesk (antes Inter), fondo blanco, texto
-  casi negro, acento gris azulado (`#3f5c74`). Modo oscuro automático según el
+  casi negro y **dorado** como acento (blanco / negro / dorado desde noviembre 2026; antes azul):
+  `--oro` `#d4af37` para lo decorativo y `--accent` `#8a6a12` (dorado oscuro) para textos chicos
+  y enlaces, por contraste. Imagen para compartir: `assets/img/og-image.png`. Modo oscuro automático según el
   sistema, sin botón. Ancho de página 920px; bloques de texto largos limitados
   a ~60 caracteres para lectura cómoda.
 - **Juego Breakout:** repo propio en https://github.com/jaretjrd-source/breakout
